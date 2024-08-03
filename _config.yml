@@ -6,6 +6,10 @@ repository: dgarhdez/dgarhdez.github.io # for github-metadata plugin
 permalink: pretty
 logo: "/images/me.jpg"
 favicon_ico: "/images/me.jpg"
+nav_enabled: true
+heading_anchors: true
+last_edit_timestamp: true
+last_edit_time_format: "%b %e %Y at %I:%M %p"
 
 plugins:
   - jemoji

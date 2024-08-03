@@ -174,3 +174,17 @@ In general, Python will convert the less precise type to the more precise one. F
 This adds safety but also can lead to unexpected results, so we need to be careful when mixing types.
 
 :arrow_left: [Basics](../01_basics/01_basics.md) - [Variables and Types](../03_operations/03_operations.md) :arrow_right:
+
+##  Special types
+
+There are some special types in Python that we can use to store special values:
+
+* `None`: This is a special value that indicates that the variable has no value. It is similar to `null` in other languages. It's the equivalent of an empty box.
+
+```python
+my_none_variable = None
+
+print(my_none_variable)
+```
+
+> None
