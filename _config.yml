@@ -4,6 +4,8 @@ description: The place to find all of Daniel's courses and tutorials.
 url: "https://dgarhdez.github.io"
 repository: dgarhdez/dgarhdez.github.io # for github-metadata plugin
 permalink: pretty
+logo: "/images/me.jpg"
+favicon_ico: "/images/me.jpg"
 
 plugins:
   - jemoji
