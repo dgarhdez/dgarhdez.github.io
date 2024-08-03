@@ -1,5 +1,9 @@
 # Python for Data Analytics: Variables and types in Python
 
+:arrow_left:[Previous part: Basics](../01_basics/01_basics.md)
+
+:arrow_left:[Next part: Variables and Types](../02_variables_and_types/02_variables_and_types.md)
+
 The first thing we need to know Python is how to store data.
 
 We can of course do operations without storing data or the results, but that's not very useful if we need to use the results later on.
@@ -18,7 +22,7 @@ In this case, we are assigning the value `5` to the variable `_my_first_variable
 
 Keep in mind that in Python, variables are case sensitive, so `_my_first_variable` is different from `_My_first_variable`.
 
-## Printing variables
+### Printing variables
 
 We can print the value of a variable using the `print()` function:
 
@@ -28,18 +32,9 @@ my_first_variable = 5
 print(my_first_variable)
 ```
 
+> 5
+
 This will print `5` to the console, or wherever the output is redirected.
-
-## Interlude: comments
-
-If Python, whenever we want to include a comment in our code, we use the `#` character. This will tell Python to ignore the rest of the line, so we can write whatever we want after it.
-
-Comments are very useful to explain why are doing something, or to remember what we were thinking when we wrote the code.
-
-```python
-# This is a comment
-my_first_variable = 5  # This is another comment
-```
 
 ### Naming variables
 
@@ -62,6 +57,43 @@ We will use a specific formatting for our variables called `snake_case`. There a
 
 More on this in [PEP 8](https://peps.python.org/pep-0008/#descriptive-naming-styles).
 
+### Storing the result of an operation
+
+We can store the result of an operation in a variable, and then use it later on:
+
+```python
+my_first_variable = 5
+
+my_second_variable = 3
+
+result = my_first_variable + my_second_variable
+
+print(result)
+```
+
+> 8
+
+More on operations in [3. Operations](../03_operations/03_operations.md).
+
+### Understanding variables
+
+We can think of variables as labelled boxes where we can store data. We can put data in them, take data out of them, and even change the data inside them.
+
+In reality, variables are references to memory locations where the data is stored. When we assign a value to a variable, Python will create a memory location, store the data there, and then assign the reference to the variable.
+
+So basically, variables are addresses to memory locations where the data is stored. This is why we can change the data in a variable, and the reference will still be the same.
+
+## Interlude: comments
+
+If Python, whenever we want to include a comment in our code, we use the `#` character. This will tell Python to ignore the rest of the line, so we can write whatever we want after it.
+
+Comments are very useful to explain why are doing something, or to remember what we were thinking when we wrote the code.
+
+```python
+# This is a comment
+my_first_variable = 5  # This is another comment
+```
+
 ## Types
 
 What kind of data can we store in a variable? Python can handle many types of data, but the most common ones are:
@@ -81,9 +113,13 @@ my_first_variable = 5
 print(type(my_first_variable))
 ```
 
+> `<class 'int'>`
+
 This will print `<class 'int'>` to the console, indicating that the variable `my_first_variable` is an integer.
 
 Each type has its own operations and methods, and we will see them in the next sections.
+
+Let's see some examples of each type:
 
 ### Type conversion
 
@@ -99,6 +135,8 @@ my_float_variable = float(my_int_variable)
 print(my_float_variable)
 ```
 
+> 5.0
+
 This will print `5.0` to the console, indicating that the variable `my_float_variable` is a float.
 
 We can also convert a float to an integer using the `int()` function:
@@ -110,6 +148,8 @@ my_int_variable = int(my_float_variable)
 
 print(my_int_variable)
 ```
+
+> 3
 
 This will print `3` to the console, indicating that the variable `my_int_variable` is an integer. Keep in mind that the decimal part is truncated, not rounded, so don't use `int` to round numbers.
 
@@ -123,7 +163,9 @@ my_str_variable = str(my_int_variable)
 print(my_str_variable)
 ```
 
-This will print `'5'` to the console, indicating that the variable `my_str_variable` is a string. Although for us, humans hopefully, it's the same, for Python it's a different type. Python and other programming languages are very strict about types, so we need to be careful when converting between them.
+> '5'
+
+This will print `'5'` to the console, indicating that the variable `my_str_variable` is a string. Although for us, humans -- hopefully--, it's the same, for Python it's a different type. Python and other programming languages are very strict about types, so we need to be careful when converting between them.
 
 ### Type coercion
 

@@ -29,3 +29,5 @@ You will have access to Jupyter Notebooks within Anaconda, but I strongly recomm
 ## Practicing what you learn
 
 WIP
+
+:arrow_left:[Next part: Variables and Types](../02_variables_and_types/02_variables_and_types.md)

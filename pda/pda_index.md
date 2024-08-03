@@ -6,8 +6,8 @@ This course covers 2 terms, with 4 main blocks.
 
 1. [Basics](/01_basics/01_basics.md)
 2. [Variables and types](/02_variables_and_types/02_variables_and_types.md)
-3. Operations
-4. Data structures
+3. [Operations](/03_operations/03_operations.md)
+4. [Data Structures](/04_data_structures/04_data_structures.md)
 5. Conditionals
 6. Loops
 7. Functions
