@@ -2,7 +2,8 @@
 
 This course covers 2 terms, with 4 main blocks.
 
-1. Term 1: Python, Pandas, and Plotly basics
+## Term 1: Python, Pandas, and Plotly basics
+
     1. Basics
     2. Variables and types
     3. Operations
@@ -19,7 +20,8 @@ This course covers 2 terms, with 4 main blocks.
     14. Handling missing data with Pandas
     15. Intro to Plotly
 
-2. Term 2: Advanced Pandas, sklearn, and pipelines
+## Term 2: Advanced Pandas, sklearn, and pipelines
+
     1. Date and time operations with Pandas
     2. String operations and Regex with Pandas
     3. Intro to sklearn API
