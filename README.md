@@ -1,3 +1,3 @@
-# dgarhdez.github.io
+#  Python for Data Analytics course
 
-Aasdfasdfawefqercqerc
+[Link to repo](https://github.com/dgarhdez/dgarhdez.github.io)
