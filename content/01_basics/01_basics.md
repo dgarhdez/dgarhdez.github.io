@@ -1,5 +1,3 @@
-layout: page
-title: "Basics"
-permalink: /introduction
+# Python for Data Analytics course: Basics
 
 qsdferfqwerc
