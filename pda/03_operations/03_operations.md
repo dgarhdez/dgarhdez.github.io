@@ -1,6 +1,6 @@
 # Python for Data Analytics: Operations
 
-:arrow_left:[Variables and Types](../02_variables_and_types/02_variables_and_types.md) - :arrow_right:[Data Structures](../04_data_structures/04_data_structures.md)
+:arrow_left: [Variables and Types](../02_variables_and_types/02_variables_and_types.md) - [Data Structures](../04_data_structures/04_data_structures.md) :arrow_right:
 
 Now that we know the basic types of data and how to store them properly in memory using variables, we can start to perform operations between them.
 
@@ -259,4 +259,4 @@ Finally, we solve the logical operation `False and True`:
 False
 ```
 
-:arrow_left:[Variables and Types](../02_variables_and_types/02_variables_and_types.md) - :arrow_right:[Data Structures](../04_data_structures/04_data_structures.md)
+:arrow_left: [Variables and Types](../02_variables_and_types/02_variables_and_types.md) - [Data Structures](../04_data_structures/04_data_structures.md) :arrow_right:

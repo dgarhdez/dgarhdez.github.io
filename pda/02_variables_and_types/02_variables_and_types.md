@@ -1,6 +1,6 @@
 # Python for Data Analytics: Variables and types in Python
 
-:arrow_left:[Basics](../01_basics/01_basics.md) - [Variables and Types](../03_operations/03_operations.md):arrow_right:
+:arrow_left: [Basics](../01_basics/01_basics.md) - [Variables and Types](../03_operations/03_operations.md) :arrow_right:
 
 The first thing we need to know Python is how to store data.
 
@@ -173,4 +173,4 @@ In general, Python will convert the less precise type to the more precise one. F
 
 This adds safety but also can lead to unexpected results, so we need to be careful when mixing types.
 
-:arrow_left:[Basics](../01_basics/01_basics.md) - [Variables and Types](../03_operations/03_operations.md):arrow_right:
+:arrow_left: [Basics](../01_basics/01_basics.md) - [Variables and Types](../03_operations/03_operations.md) :arrow_right:

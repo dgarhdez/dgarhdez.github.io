@@ -14,19 +14,19 @@ I also teach Python for Data Analytics at [IE School of Science and Technology](
 
 You can find me in the following places:
 
-:email:[Email](mailto:dgarhdez@gmail.com)
+:envelope: [Email](mailto:dgarhdez@gmail.com)
 
-:necktie:[Linkedin](https://www.linkedin.com/in/dgarhdez/)
+:necktie: [Linkedin](https://www.linkedin.com/in/dgarhdez/)
 
-:computer:[GitHub](https://github.com/dgarhdez)
+:computer: [GitHub](https://github.com/dgarhdez)
 
-:musical_keyboard:[Spotify](https://open.spotify.com/user/dgarhdez?si=254c37467a164c42)
+:musical_keyboard: [Spotify](https://open.spotify.com/user/dgarhdez?si=254c37467a164c42)
 
 ## Courses
 
 As I am teaching Python for Data Analytics, I've created some material for the classes. I wanted to have it available online, so here it is.
 
-* :snake: [Python for Data Analytics](/pda/pda_index.md) :snake:
+:snake: [Python for Data Analytics](/pda/pda_index.md) :snake:
 
 ## About this site
 
