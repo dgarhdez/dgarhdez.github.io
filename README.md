@@ -10,7 +10,7 @@ I've been working with data for the last 8 years, mostly in the energy sector an
 
 I'm mostly experienced in Data Analytics, Machine Learning, and Analytics Engineering. I'm the most comfortable with Python and SQL.
 
-I also teach Python for Data Analytics at [IE School of Science and Technology](https://www.ie.edu/school-science-technology/faculty/daniel-garcia-hernandez/), you can see the course [here](/pda/pda_index.md).
+I also teach Python for Data Analytics at [IE School of Science and Technology](https://www.ie.edu/school-science-technology/faculty/daniel-garcia-hernandez/).
 
 You can find me in the following places:
 
