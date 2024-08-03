@@ -1,8 +1,6 @@
 # Python for Data Analytics: Variables and types in Python
 
-:arrow_left:[Previous part: Basics](../01_basics/01_basics.md)
-
-:arrow_left:[Next part: Variables and Types](../02_variables_and_types/02_variables_and_types.md)
+:arrow_left:[Basics](../01_basics/01_basics.md) - [Variables and Types](../02_variables_and_types/02_variables_and_types.md):arrow_right:
 
 The first thing we need to know Python is how to store data.
 
@@ -174,3 +172,5 @@ Sometimes, Python will convert a variable from one type to another automatically
 In general, Python will convert the less precise type to the more precise one. For example, if we add an integer and a float, Python will convert the integer to a float and then add them.
 
 This adds safety but also can lead to unexpected results, so we need to be careful when mixing types.
+
+:arrow_left:[Basics](../01_basics/01_basics.md) - [Variables and Types](../02_variables_and_types/02_variables_and_types.md):arrow_right:

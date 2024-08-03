@@ -1,5 +1,7 @@
 # Python for Data Analytics: Basics
 
+:arrow_right:[Variables and Types](../02_variables_and_types/02_variables_and_types.md)
+
 Python is programming language with which we can do many things. It's a very versatile that will allow us to tackle many problems in different disciplines. In this course we will focus on the data analytics part of Python, which is a very popular use case for this language.
 
 In the course we will cover several topics, always in the context of data analytics and data science.
@@ -30,4 +32,4 @@ You will have access to Jupyter Notebooks within Anaconda, but I strongly recomm
 
 WIP
 
-:arrow_left:[Next part: Variables and Types](../02_variables_and_types/02_variables_and_types.md)
+:arrow_right:[Variables and Types](../02_variables_and_types/02_variables_and_types.md)
