@@ -4,8 +4,6 @@ description: The place to find all of Daniel's courses and tutorials.
 url: "https://dgarhdez.github.io"
 repository: dgarhdez/dgarhdez.github.io # for github-metadata plugin
 permalink: pretty
-logo: "/images/me.jpg"
-favicon_ico: "/images/me.jpg"
 nav_enabled: true
 heading_anchors: true
 last_edit_timestamp: true
@@ -13,3 +11,13 @@ last_edit_time_format: "%b %e %Y at %I:%M %p"
 
 plugins:
   - jemoji
+
+mermaid:
+  # Version of mermaid library
+  # Pick an available version from https://cdn.jsdelivr.net/npm/mermaid/
+  version: "9.1.3"
+
+kramdown:
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true
