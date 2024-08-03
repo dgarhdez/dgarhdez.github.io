@@ -1,1 +1,8 @@
 remotetheme: just-the-docs/just-the-docs
+title: Daniel's Docs
+description: The place to find all of Daniel's courses and tutorials.
+baseurl: ""
+url: "https://dgarhdez.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
+repository: dgarhdez/dgarhdez.github.io # for github-metadata plugin
+
+permalink: pretty
