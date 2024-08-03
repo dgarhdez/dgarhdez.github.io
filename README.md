@@ -2,6 +2,8 @@
 
 Hi there :wave:
 
+![Profile Picture](/images/me.jpg)
+
 I'm Daniel García Hernández, and I work with Data. I've been working with data for the last 8 years, mostly in the energy sector and lately in the e-commerce sector.
 
 I'm mostly experienced in Analytics Engineering, Data Analytics and Machine Learning. I've the most comfortable with Python and SQL.
