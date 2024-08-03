@@ -2,7 +2,7 @@
 
 In this course we'll cover the basics of Python when working with data.
 
-1. [Introduction](#content/01_basics/01-introduction.md): Introduction to the course.
+1. [Introduction](#content/01_basics/01_basics.md): Introduction to the course.
 
 * Variables and types
 * Operations
