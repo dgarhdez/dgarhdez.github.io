@@ -9,8 +9,8 @@ This course covers 2 terms, with 4 main blocks.
 3. [Operations](/03_operations/03_operations.md)
 4. [Data Structures](/04_data_structures/04_data_structures.md)
 5. [Conditionals](/05_conditionals/05_conditionals.md)
-6. Loops
-7. Functions
+6. [Loops](/06_loops/06_loops.md)
+7. [Functions](/07_functions/07_functions.md)
 8. Error handling
 9. Scripts and Modules
 10. I/O with Context Manager
