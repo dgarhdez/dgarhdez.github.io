@@ -17,4 +17,4 @@ mermaid:
 
 plugins:
   - jemoji
-  - mermaid
+  - jekyll-spaceship
