@@ -240,11 +240,11 @@ else:
 
 ```mermaid
 graph TD
-    F[my_number = 5] --> A{number <= 7?}
-    A -->|True| B[print 'Less than 7']
-    A -->|False| C{number > 10?}
-    C -->|True| D[print 'Greater than 10']
-    C -->|False| E[print 'Between 7 and 10']
+    F[my_number = 5] --> A{number <= 7?};
+    A -->|True| B[print 'Less than 7'];
+    A -->|False| C{number > 10?};
+    C -->|True| D[print 'Greater than 10'];
+    C -->|False| E[print 'Between 7 and 10'];
 ```
 
 ## Using conditionals when defining variables
