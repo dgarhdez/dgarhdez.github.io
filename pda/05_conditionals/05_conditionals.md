@@ -36,10 +36,11 @@ if len(my_string) > 5:
 
 In this case, the expression to be evaluated is `len(my_string) > 5`. The `len()` function returns the length of the string, and we compare it to 5.
 
-```mermaid
-graph TD
+<pre class="mermaid">
+graph LR
     A{length of str\nis greater than 5?} -->|True| B[print my_string]
-```
+</pre>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.1/dist/mermaid.min.js"></script>
 
 With different strings, the code block will be executed or not depending on the length of the string.
 
@@ -52,10 +53,11 @@ if len(my_string) > 5:
 
 In this case, the code block will not be executed, as the length of the string is less than 5.
 
-```mermaid
-graph TD
+<pre class="mermaid">
+graph LR
     A{length of str\nis greater than 5?} -->|False| B[Do nothing]
-```
+</pre>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.1/dist/mermaid.min.js"></script>
 
 ### The `else` statement
 
@@ -83,11 +85,12 @@ else:
 
 > The string is too short
 
-```mermaid
-graph TD
+<pre class="mermaid">
+graph LR
     A{length of str\nis greater than 5?} -->|True| B[print my_string]
     A -->|False| C[print 'The string is too short']
-```
+</pre>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.1/dist/mermaid.min.js"></script>
 
 ### The `elif` statement
 
@@ -127,14 +130,15 @@ else:
 
 How is this code interpreted? Let's see!
 
-```mermaid
-graph TD
+<pre class="mermaid">
+graph LR
     F[my_number = 5] --> A{number > 0?}
     A -->|True| B[print 'Positive']
     A -->|False| C{number < 0?}
     C -->|True| D[print 'Negative']
     C -->|False| E[print 'Zero']
-```
+</pre>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.1/dist/mermaid.min.js"></script>
 
 As you see, since the number is 5, it can only be greater than 0, so the code block that prints "Positive" is executed.
 
@@ -238,14 +242,15 @@ else:
 
 > Less than 7
 
-```mermaid
-graph TD
+<pre class="mermaid">
+graph LR
     F[my_number = 5] --> A{number <= 7?};
     A -->|True| B[print 'Less than 7'];
     A -->|False| C{number > 10?};
     C -->|True| D[print 'Greater than 10'];
     C -->|False| E[print 'Between 7 and 10'];
-```
+</pre>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.1/dist/mermaid.min.js"></script>
 
 ## Using conditionals when defining variables
 
