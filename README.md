@@ -31,3 +31,9 @@ As I am teaching Python for Data Analytics, I've created some material for the c
 ## About this site
 
 [Link to repo](https://github.com/dgarhdez/dgarhdez.github.io)
+
+<pre class="mermaid">
+graph LR
+  a --- b & c --- d
+</pre>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.1/dist/mermaid.min.js"></script>
