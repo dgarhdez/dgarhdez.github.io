@@ -1,6 +1,6 @@
 # Python for Data Analytics: Data Structures
 
-:arrow_left: [Operations](../03_operations/03_operations.md) - [Conditionals](../05_conditionals/05_conditionals.md) :arrow_right:
+:arrow_left: [String Operations](../04_string_operations/04_string_operations.md) - [Conditionals](../06_conditionals/06_conditionals.md) :arrow_right:
 
 Let's recap the main concepts we've learned so far:
 
@@ -77,7 +77,7 @@ my_list = [1, 2, 3, 4, 5]
 print(my_list)
 ```
 
-> `[1, 2, 3, 4, 5]`
+> Output: `[1, 2, 3, 4, 5]`
 
 ### Lists properties and methods
 
@@ -91,7 +91,7 @@ my_list = [1, 2, 3, 4, 5]
 print(len(my_list))
 ```
 
-> `5`
+> Output: `5`
 
 #### Adding elements to a list: `append()`
 
@@ -103,7 +103,7 @@ my_list.append(6)
 print(my_list)
 ```
 
-> `[1, 2, 3, 4, 5, 6]`
+> Output: `[1, 2, 3, 4, 5, 6]`
 
 #### Adding elements to a list in a specific position: `insert()`
 
@@ -115,7 +115,7 @@ my_list.insert(2, 2.5)
 print(my_list)
 ```
 
-> `[1, 2, 2.5, 3, 4, 5]`
+> Output: `[1, 2, 2.5, 3, 4, 5]`
 
 #### Removing elements from a list: `remove()`
 
@@ -127,7 +127,7 @@ my_list.remove("c")
 print(my_list)
 ```
 
-> `['a', 'b', 'd', 'e']`
+> Output: `['a', 'b', 'd', 'e']`
 
 #### Removing elements from a list by index: `pop()`
 
@@ -141,7 +141,7 @@ my_list.pop(2)
 print(my_list)
 ```
 
-> `['a', 'b', 'd', 'e']`
+> Output: `['a', 'b', 'd', 'e']`
 
 Also, `pop()` returns the removed element.
 
@@ -153,7 +153,7 @@ removed_element = my_list.pop()
 print(removed_element)
 ```
 
-> `e`
+> Output: `e`
 
 #### Changing elements in a list
 
@@ -165,7 +165,7 @@ my_list[2] = 10 # change the element in the third position
 print(my_list)
 ```
 
-> `[1, 2, 10, 4, 5]`
+> Output: `[1, 2, 10, 4, 5]`
 
 ## Tuples
 
@@ -187,7 +187,7 @@ my_tuple = (1, 2, 3, 4, 5)
 print(my_tuple)
 ```
 
-> `(1, 2, 3, 4, 5)`
+> Output: `(1, 2, 3, 4, 5)`
 
 ### Tuples properties and methods
 
@@ -201,7 +201,7 @@ my_tuple = (1, 2, 3, 4, 5)
 print(len(my_tuple))
 ```
 
-> `5`
+> Output: `5`
 
 ## Sets
 
@@ -225,7 +225,7 @@ my_set = {1, 2, 2, 3, 4, 4, 5}
 print(my_set)
 ```
 
-> `{1, 2, 3, 4, 5}`
+> Output: `{1, 2, 3, 4, 5}`
 
 As you can see, the repeated elements were removed.
 
@@ -241,7 +241,7 @@ my_set = {1, 2, 3, 4, 5}
 print(len(my_set))
 ```
 
-> `5`
+> Output: `5`
 
 #### Adding elements to a set: `add()`
 
@@ -253,7 +253,7 @@ my_set.add(6)
 print(my_set)
 ```
 
-> `{1, 2, 3, 4, 5, 6}`
+> Output: `{1, 2, 3, 4, 5, 6}`
 
 #### Removing elements from a set: `remove()`
 
@@ -265,7 +265,7 @@ my_set.remove(3)
 print(my_set)
 ```
 
-> `{1, 2, 4, 5}`
+> Output: `{1, 2, 4, 5}`
 
 #### Adding single elements: `set()`
 
@@ -277,7 +277,7 @@ my_set.add(6)
 print(my_set)
 ```
 
-> `{1, 2, 3, 4, 5, 6}`
+> Output: `{1, 2, 3, 4, 5, 6}`
 
 #### Adding elements from another data structure: `update()`
 
@@ -289,7 +289,7 @@ my_set.update([6, 7, 8])
 print(my_set)
 ```
 
-> `{1, 2, 3, 4, 5, 6, 7, 8}`
+> Output: `{1, 2, 3, 4, 5, 6, 7, 8}`
 
 ### Set operations
 
@@ -306,7 +306,7 @@ set2 = {3, 4, 5}
 print(set1.union(set2))
 ```
 
-> `{1, 2, 3, 4, 5}`
+> Output: `{1, 2, 3, 4, 5}`
 
 You can also use the `|` operator.
 
@@ -325,7 +325,7 @@ set2 = {3, 4, 5}
 print(set1.intersection(set2))
 ```
 
-> `{3}`
+> Output: `{3}`
 
 You can also use the `&` operator.
 
@@ -344,7 +344,7 @@ set2 = {3, 4, 5}
 print(set1.difference(set2))
 ```
 
-> `{1, 2}`
+> Output: `{1, 2}`
 
 You can also use the `-` operator.
 
@@ -363,7 +363,7 @@ set2 = {3, 4, 5}
 print(set1.symmetric_difference(set2))
 ```
 
-> `{1, 2, 4, 5}`
+> Output: `{1, 2, 4, 5}`
 
 You can also use the `^` operator.
 
@@ -401,7 +401,7 @@ my_dict = {"name": "Dani", "age": 36, "city": "Istanbul"}
 print(len(my_dict))
 ```
 
-> `3`
+> Output: `3`
 
 #### Extracting the keys of a dictionary: `keys()`
 
@@ -411,7 +411,7 @@ my_dict = {"name": "Dani", "age": 36, "city": "Istanbul"}
 print(my_dict.keys())
 ```
 
-> `dict_keys(['name', 'age', 'city'])`
+> Output: `dict_keys(['name', 'age', 'city'])`
 
 #### Extracting the values of a dictionary: `values()`
 
@@ -421,7 +421,7 @@ my_dict = {"name": "Dani", "age": 36, "city": "Istanbul"}
 print(my_dict.values())
 ```
 
-> `dict_values(['Dani', 36, 'Istanbul'])`
+> Output: `dict_values(['Dani', 36, 'Istanbul'])`
 
 #### Extracting the key-value pairs of a dictionary: `items()`
 
@@ -433,7 +433,7 @@ my_dict = {"name": "Dani", "age": 36, "city": "Istanbul"}
 print(my_dict.items())
 ```
 
-> `dict_items([('name', 'Dani'), ('age', 36), ('city', 'Istanbul')])`
+> Output: `dict_items([('name', 'Dani'), ('age', 36), ('city', 'Istanbul')])`
 
 #### Removing an element from a dictionary: `pop()`
 
@@ -445,7 +445,7 @@ my_dict.pop("age")
 print(my_dict)
 ```
 
-> `{'name': 'Dani', 'city': 'Istanbul'}`
+> Output: `{'name': 'Dani', 'city': 'Istanbul'}`
 
 #### Adding new elements to a dictionary: `update()`
 
@@ -458,7 +458,7 @@ my_dict.update({"age": 37})
 print(my_dict)
 ```
 
-> `{'name': 'Dani', 'age': 37, 'city': 'Istanbul', 'country': 'Turkey'}`
+> Output: `{'name': 'Dani', 'age': 37, 'city': 'Istanbul', 'country': 'Turkey'}`
 
 ## Indexing and slicing
 
@@ -480,7 +480,7 @@ my_list = [1, 2, 3, 4, 5]
 print(my_list[0])
 ```
 
-> `1`
+> Output: `1`
 
 #### Extracting the last element
 
@@ -492,7 +492,7 @@ my_list = [1, 2, 3, 4, 5]
 print(my_list[-1])
 ```
 
-> `5`
+> Output: `5`
 
 Also, we can use the `len()` function to extract the last element.
 
@@ -504,7 +504,7 @@ last_index = len(my_list) - 1
 print(my_list[last_index])
 ```
 
-> `5`
+> Output: `5`
 
 ####  Extracting central elements
 
@@ -516,7 +516,7 @@ my_list = [1, 2, 3, 4, 5]
 print(my_list[2])
 ```
 
-> `3`
+> Output: `3`
 
 ####  Negative indexes
 
@@ -528,7 +528,7 @@ my_list = [1, 2, 3, 4, 5]
 my_list[-3] == my_list[2]
 ```
 
-> `True`
+> Output: `True`
 
 ### Slicing
 
@@ -554,7 +554,7 @@ my_list = [1, 2, 3, 4, 5]
 print(my_list[0:3])
 ```
 
-> `[1, 2, 3]`
+> Output: `[1, 2, 3]`
 
 By default, if we don't provide a `start`, it's considered `0`.
 
@@ -564,7 +564,7 @@ my_list = [1, 2, 3, 4, 5]
 print(my_list[:3])
 ```
 
-> `[1, 2, 3]`
+> Output: `[1, 2, 3]`
 
 #### Extracting the last 3 elements
 
@@ -574,7 +574,7 @@ my_list = [1, 2, 3, 4, 5]
 print(my_list[-3:])
 ```
 
-> `[3, 4, 5]`
+> Output: `[3, 4, 5]`
 
 By default, if we don't provide a `stop`, it's considered the end of the list.
 
@@ -586,7 +586,7 @@ my_list = [1, 2, 3, 4, 5]
 print(my_list[1:4])
 ```
 
-> `[2, 3, 4]`
+> Output: `[2, 3, 4]`
 
 Remember that the `stop` index is exclusive, therefore the element at index `4` is not included, but the element at index `3` is.
 
@@ -600,7 +600,7 @@ my_list = [1, 2, 3, 4, 5]
 print(my_list[::2])
 ```
 
-> `[1, 3, 5]`
+> Output: `[1, 3, 5]`
 
 #### Reversing a list
 
@@ -612,7 +612,7 @@ my_list = [1, 2, 3, 4, 5]
 print(my_list[::-1])
 ```
 
-> `[5, 4, 3, 2, 1]`
+> Output: `[5, 4, 3, 2, 1]`
 
 ## Extracting elements from a dictionary
 
@@ -624,7 +624,7 @@ my_dict = {"name": "Dani", "age": 36, "city": "Istanbul"}
 print(my_dict["name"])
 ```
 
-> `Dani`
+> Output: `Dani`
 
 If the key doesn't exist, we get a `KeyError`.
 
@@ -634,7 +634,7 @@ my_dict = {"name": "Dani", "age": 36, "city": "Istanbul"}
 print(my_dict["country"])
 ```
 
-> `KeyError: 'country'`
+> Output: `KeyError: 'country'`
 
 Meaning that the key `country` doesn't exist in the dictionary, therefore Python can't provide the value associated with it.
 
@@ -646,8 +646,8 @@ my_dict = {"name": "Dani", "age": 36, "city": "Istanbul"}
 print(my_dict.get("country"))
 ```
 
-> `None`
+> Output: `None`
 
 If the key doesn't exist, we get `None`, which is a special value in Python that represents the absence of a value, like a null value.
 
-:arrow_left: [Operations](../03_operations/03_operations.md) - [Conditionals](../05_conditionals/05_conditionals.md) :arrow_right:
+:arrow_left: [String Operations](../04_string_operations/04_string_operations.md) - [Conditionals](../06_conditionals/06_conditionals.md) :arrow_right:

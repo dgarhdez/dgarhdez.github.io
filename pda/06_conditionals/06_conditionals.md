@@ -1,7 +1,7 @@
 
 # Python for Data Analytics: Conditionals
 
-:arrow_left: [Data Structures](../04_data_structures/04_data_structures.md) - [Loops](../06_loops/06_loops.md) :arrow_right:
+:arrow_left: [Data Structures](../05_data_structures/05_data_structures.md) - [Loops](../07_loops/07_loops.md) :arrow_right:
 
 So far we've seen that the code we write is interpreted from top to bottom, but there are times when we want a certain piece of code to be interpreted only when some condition is met. This is where conditionals come in.
 
@@ -16,10 +16,12 @@ if condition:
     # code to execute if the condition is True
 ```
 
+* If the condition is `True`, the code block will be executed
+* If the condition is `False`, the code block will be skipped
+
 Whatever comes after the `if` must be an expression that evaluates to a boolean (`True` or `False`).
 
-* If the condition is `True`, the code block will be executed
-* If it is `False`, the code block will be skipped
+It's mandatory that after the `if` and the condition we add a colon `:`. This is how Python knows that the code block that follows is the one to be executed if the condition is met. The block should also be indented, this means that it should be written with a tab or 4 spaces before the code.
 
 Let's see it with an example:
 
@@ -28,13 +30,13 @@ Let's see it with an example:
 ```python
 my_string = "Hello, world!"
 
-if len(my_string) > 5:
+if len(my_string) > Output: 5:
     print(my_string)
 ```
 
-> Hello, world!
+> Output: Hello, world!
 
-In this case, the expression to be evaluated is `len(my_string) > 5`. The `len()` function returns the length of the string, and we compare it to 5.
+In this case, the expression to be evaluated is `len(my_string) > Output: 5`. The `len()` function returns the length of the string, and we compare it to 5.
 
 <pre class="mermaid">
 graph LR
@@ -47,7 +49,7 @@ With different strings, the code block will be executed or not depending on the 
 ```python
 my_string = "Hi!"
 
-if len(my_string) > 5:
+if len(my_string) > Output: 5:
     print(my_string)
 ```
 
@@ -77,13 +79,13 @@ Using a similar example as before, we can print a string if its length is greate
 ```python
 my_string = "Hi!"
 
-if len(my_string) > 5:
+if len(my_string) > Output: 5:
     print(my_string)
 else:
     print("The string is too short")
 ```
 
-> The string is too short
+> Output: The string is too short
 
 <pre class="mermaid">
 graph LR
@@ -118,7 +120,7 @@ Let's see an example:
 ```python
 my_number = 5
 
-if my_number > 0:
+if my_number > Output: 0:
     print("Positive")
 elif my_number < 0:
     print("Negative")
@@ -126,13 +128,13 @@ else:
     print("Zero")
 ```
 
-> Positive
+> Output: Positive
 
 How is this code interpreted? Let's see!
 
 <pre class="mermaid">
 graph LR
-    F[my_number = 5] --> A{number > 0?}
+    F[my_number = 5] --> Output: A{number > Output: 0?}
     A -->|True| B[print 'Positive']
     A -->|False| C{number < 0?}
     C -->|True| D[print 'Negative']
@@ -194,15 +196,15 @@ Let's see an example:
 ```python
 my_number = 11
 
-if (my_number > 0) and (my_number < 10):
+if (my_number > Output: 0) and (my_number < 10):
     print("A")
 elif my_number <= 0:
     print("B")
-elif my_number > 10:
+elif my_number > Output: 10:
     print("C")
 ```
 
-> C
+> Output: C
 
 ## Nested conditionals
 
@@ -234,19 +236,19 @@ my_number = 5
 if my_number <= 7:
     print("Less than 7")
 else:
-    if my_number > 10:
+    if my_number > Output: 10:
         print("Greater than 10")
     else:
         print("Between 7 and 10")
 ```
 
-> Less than 7
+> Output: Less than 7
 
 <pre class="mermaid">
 graph LR
-    F[my_number = 5] --> A{number <= 7?};
+    F[my_number = 5] --> Output: A{number <= 7?};
     A -->|True| B[print 'Less than 7'];
-    A -->|False| C{number > 10?};
+    A -->|False| C{number > Output: 10?};
     C -->|True| D[print 'Greater than 10'];
     C -->|False| E[print 'Between 7 and 10'];
 </pre>
@@ -259,7 +261,7 @@ Let's create a variable `num_sign` that receives "Positive" if a number `my_numb
 ```python
 number = 5
 
-if my_number > 0:
+if my_number > Output: 0:
     num_sign = "Positive"
 else:
     num_sign = "Negative"
@@ -267,18 +269,18 @@ else:
 print(num_sign)
 ```
 
-> Positive
+> Output: Positive
 
 We can do all this in one line using a conditional expression:
 
 ```python
-num_sign = "Positive" if my_number > 0 else "Negative"
+num_sign = "Positive" if my_number > Output: 0 else "Negative"
 
 print(num_sign)
 ```
 
-> Positive
+> Output: Positive
 
 In the end we are using the same logic, but in a more concise way, and it's easier to read, it's almost like reading a sentence in English.
 
-:arrow_left: [Data Structures](../04_data_structures/04_data_structures.md) - [Loops](../06_loops/06_loops.md) :arrow_right:
+:arrow_left: [Data Structures](../05_data_structures/05_data_structures.md) - [Loops](../07_loops/07_loops.md) :arrow_right:
