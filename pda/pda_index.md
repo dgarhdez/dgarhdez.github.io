@@ -1,6 +1,6 @@
 # Python for Data Analytics
 
-## Block 1: Python, Pandas, and Plotly basics
+## Block 1: Python basics
 
 1. [Basics](/block_01/01_basics/01_basics.md)
 2. [Variables and types](/block_01/02_variables_and_types/02_variables_and_types.md)
@@ -32,5 +32,3 @@
 6. Cross-validation with sklearn
 7. Hyperparameter tuning with sklearn
 8. Column transformers and pipelines with sklearn
-9. Supervised learning metrics: regression
-10. Supervised learning metrics: classification
