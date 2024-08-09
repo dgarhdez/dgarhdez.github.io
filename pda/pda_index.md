@@ -1,7 +1,5 @@
 # Python for Data Analytics
 
-This course covers 2 terms, with 4 main blocks.
-
 ## Block 1: Python, Pandas, and Plotly basics
 
 1. [Basics](/01_basics/01_basics.md)
