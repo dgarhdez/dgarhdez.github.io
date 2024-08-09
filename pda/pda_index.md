@@ -11,7 +11,7 @@
 7. [Loops](/07_loops/07_loops.md)
 8. [Comprehensions](/08_comprehensions/08_comprehensions.md)
 9. [Functions](/09_functions/09_functions.md)
-10. Scripts and Modules
+10. Error catching
 11. I/O with Context Manager
 12. Intro to Numpy
 13. Intro to Pandas

@@ -274,17 +274,61 @@ Where:
 * `value_expression` is the expression that will be used as the value in the new dictionary.
 * `item` is the variable that will take the values from the iterable.
 
-Let's see it with an example: given the alphabet, create a dictionary where the keys are the characters of the alphabet, and the values are the positions of each letter in the alphabet (look up the `enumerate` function if you don't know it, and how to loop through it in [Loops](../07_loops/07_loops.md/##Looping-through-special-iterables-and-objects)
+Let's see it with an example:
+
+* Given the first ten letters in the alphabet, create a dictionary where the keys are the characters of the alphabet, and the values are the positions of each letter in the alphabet
+* Hint: [Looping through special iterables and objects](../07_loops/07_loops.md/#looping-through-special-iterables-and-objects)
+
+    ```python
+    abc = 'abcdefghijklmnopqrstuvwxyz'
+
+    alphabet_positions = {
+        char: index
+        for index, char in enumerate(abc, start=1)
+        if index <= 10
+    }
+
+    print(alphabet_positions)
+    ```
+
+    > `{'a': 1, 'b': 2, 'c': 3, 'd': 4, 'e': 5, 'f': 6, 'g': 7, 'h': 8, 'i': 9, 'j': 10}`
+
+## Set Comprehensions
+
+We can also use sets as the iterable object in comprehensions, or create sets with comprehensions.
+
+The most basic syntax for a set comprehension is:
 
 ```python
-abc = 'abcdefghijklmnopqrstuvwxyz'
-
-alphabet_positions = {
-    char: index
-    for index, char in enumerate(abc, start=1) # looping over enumerate elements
+{
+    expression
+    for item in iterable
+    if condition
 }
-
-print(alphabet_positions)
 ```
 
-> `{'a': 1, 'b': 2, 'c': 3, 'd': 4, 'e': 5, 'f': 6, 'g': 7, 'h': 8, 'i': 9, 'j': 10, 'k': 11, 'l': 12, 'm': 13, 'n': 14, 'o': 15, 'p': 16, 'q': 17, 'r': 18, 's': 19, 't': 20, 'u': 21, 'v': 22, 'w': 23, 'x': 24, 'y': 25, 'z': 26}`
+Where:
+
+* `expression` is the value that will be added to the new set.
+* `item` is the variable that will take the values from the iterable.
+* `condition` is an optional filter that will be applied to the items.
+
+An example:
+
+* Given a string, create a set with the unique consonants of the string:
+
+    ```python
+    my_string = 'test for a set'
+
+    unique_chars = {
+        char
+        for char in my_string
+        if char.lower() not in 'aeiou'
+    }
+
+    print(unique_chars)
+    ```
+
+    > `{' ', 'f', 'r', 's', 't'}`
+
+:arrow_left: [Loops](../07_loops/07_loops.md) - [Functions](../09_functions/09_functions.md) :arrow_right:
