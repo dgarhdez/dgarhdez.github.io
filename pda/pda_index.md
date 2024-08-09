@@ -7,19 +7,20 @@ This course covers 2 terms, with 4 main blocks.
 1. [Basics](/01_basics/01_basics.md)
 2. [Variables and types](/02_variables_and_types/02_variables_and_types.md)
 3. [Operations](/03_operations/03_operations.md)
-4. [Data Structures](/05_data_structures/05_data_structures.md)
-5. [Conditionals](/06_conditionals/06_conditionals.md)
-6. [Loops](/07_loops/07_loops.md)
-7. [Functions](/07_functions/07_functions.md)
-8. Error handling
-9. Scripts and Modules
-10. I/O with Context Manager
-11. Intro to Numpy
-12. Intro to Pandas
-13. Data manipulation with Pandas
-14. Merge, join and concat with Pandas
-15. Handling missing data with Pandas
-16. Intro to Plotly
+4. [String operations](/04_string_operations/04_string_operations.md)
+5. [Data Structures](/05_data_structures/05_data_structures.md)
+6. [Conditionals](/06_conditionals/06_conditionals.md)
+7. [Loops](/07_loops/07_loops.md)
+8. [Functions](/07_functions/07_functions.md)
+9. Error handling
+10. Scripts and Modules
+11. I/O with Context Manager
+12. Intro to Numpy
+13. Intro to Pandas
+14. Data manipulation with Pandas
+15. Merge, join and concat with Pandas
+16. Handling missing data with Pandas
+17. Intro to Plotly
 
 ## Block 2: Advanced Pandas, sklearn, and pipelines
 
