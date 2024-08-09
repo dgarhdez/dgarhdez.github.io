@@ -1,6 +1,6 @@
 # Python for Data Analytics: Operations
 
-:arrow_left: [Variables and Types](../02_variables_and_types/02_variables_and_types.md) - [Data Structures](../05_data_structures/05_data_structures.md) :arrow_right:
+:arrow_left: [Variables and Types](../02_variables_and_types/02_variables_and_types.md) - [String Operations](../04_string_operations/04_string_operations.md) :arrow_right:
 
 Now that we know the basic types of data and how to store them properly in memory using variables, we can start to perform operations between them.
 
@@ -34,7 +34,7 @@ b = 3
 print(a + b)
 ```
 
-> Output: 8
+> 8
 
 * Subtraction:
 
@@ -45,7 +45,7 @@ b = 3
 print(a - b)
 ```
 
-> Output: 2
+> 2
 
 * Negation:
 
@@ -55,7 +55,7 @@ a = 5
 print(-a)
 ```
 
-> Output: -5
+> -5
 
 * Multiplication:
 
@@ -66,7 +66,7 @@ b = 3
 print(a * b)
 ```
 
-> Output: 15
+> 15
 
 * Division:
 
@@ -77,7 +77,7 @@ b = 3
 print(a / b)
 ```
 
-> Output: 1.6666666666666667
+> 1.6666666666666667
 
 * Integer division:
 
@@ -88,7 +88,7 @@ b = 3
 print(a // b)
 ```
 
-> Output: 1
+> 1
 
 * Modulus:
 
@@ -99,7 +99,7 @@ b = 3
 print(a % b)
 ```
 
-> Output: 2
+> 2
 
 * Exponentiation:
 
@@ -110,7 +110,7 @@ b = 3
 print(a ** b)
 ```
 
-> Output: 125
+> 125
 
 We will suse these operations left and right, so it's important to understand them well, and to know how to use them properly.
 
@@ -150,6 +150,46 @@ Finally, we solve the subtraction: `64 - 4`:
 ```python
 60
 ```
+
+### Updating variables
+
+We can also update the value of a variable using an arithmetic operation.
+
+Let's see an example: create a variable `a` with the value `5`, and update it with the result of adding `3` to it:
+
+```python
+a = 5
+
+a = a + 3
+
+print(a)
+```
+
+> 8
+
+This is a very common operation, so Python has a shorthand for it:
+
+```python
+a = 5
+
+a += 3
+
+print(a)
+```
+
+> 8
+
+This shorthand works for all arithmetic operations:
+
+| Normal operation | Shorthand |
+|------------------|-----------|
+| `a = a + 3` | `a += 3` |
+| `a = a - 3` | `a -= 3` |
+| `a = a * 3` | `a *= 3` |
+| `a = a / 3` | `a /= 3` |
+| `a = a // 3` | `a //= 3` |
+| `a = a % 3` | `a %= 3` |
+| `a = a ** 3` | `a **= 3` |
 
 ## Logical operations
 
@@ -228,7 +268,7 @@ There are 6 comparison operators in Python:
 |----------|------|-------------|---------|
 | `==` | Equal | Compares if two values are equal | `5 == 3` |
 | `!=` | Not equal | Compares if two values are different | `5 != 3` |
-| `>` | Greater than | Compares if the first value is greater than the second | `5 > Output: 3` |
+| `>` | Greater than | Compares if the first value is greater than the second | `5 > 3` |
 | `<` | Less than | Compares if the first value is less than the second | `5 < 3` |
 | `>=` | Greater than or equal | Compares if the first value is greater or equal than the second | `5 >= 3` |
 | `<=` | Less than or equal | Compares if the first value is less or equal than the second | `5 <= 3` |
@@ -238,16 +278,16 @@ We can mix these operators with arithmetic and logical operators, and we can use
 Let's see an example:
 
 ```python
-(5 + 3) * 2 ** 3 - 4 == 61 and 5 > Output: 3
+(5 + 3) * 2 ** 3 - 4 == 61 and 5 > 3
 ```
 
 First, we solve the arithmetic operations `(5 + 3) * 2 ** 3 - 4`:
 
 ```python
-60 == 61 and 5 > Output: 3
+60 == 61 and 5 > 3
 ```
 
-Then, we solve the comparison operations `60 == 61` and `5 > Output: 3`:
+Then, we solve the comparison operations `60 == 61` and `5 > 3`:
 
 ```python
 False and True
@@ -259,4 +299,4 @@ Finally, we solve the logical operation `False and True`:
 False
 ```
 
-:arrow_left: [Variables and Types](../02_variables_and_types/02_variables_and_types.md) - [Data Structures](../05_data_structures/05_data_structures.md) :arrow_right:
+:arrow_left: [Variables and Types](../02_variables_and_types/02_variables_and_types.md) - [String Operations](../04_string_operations/04_string_operations.md) :arrow_right:

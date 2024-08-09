@@ -30,7 +30,7 @@ my_first_variable = 5
 print(my_first_variable)
 ```
 
-> Output: 5
+> 5
 
 This will print `5` to the console, or wherever the output is redirected.
 
@@ -69,7 +69,7 @@ result = my_first_variable + my_second_variable
 print(result)
 ```
 
-> Output: 8
+> 8
 
 More on operations in [3. Operations](../03_operations/03_operations.md).
 
@@ -111,7 +111,7 @@ my_first_variable = 5
 print(type(my_first_variable))
 ```
 
-> Output: `<class 'int'>`
+> `<class 'int'>`
 
 This will print `<class 'int'>` to the console, indicating that the variable `my_first_variable` is an integer.
 
@@ -133,7 +133,7 @@ my_float_variable = float(my_int_variable)
 print(my_float_variable)
 ```
 
-> Output: 5.0
+> 5.0
 
 This will print `5.0` to the console, indicating that the variable `my_float_variable` is a float.
 
@@ -147,7 +147,7 @@ my_int_variable = int(my_float_variable)
 print(my_int_variable)
 ```
 
-> Output: 3
+> 3
 
 This will print `3` to the console, indicating that the variable `my_int_variable` is an integer. Keep in mind that the decimal part is truncated, not rounded, so don't use `int` to round numbers.
 
@@ -161,7 +161,7 @@ my_str_variable = str(my_int_variable)
 print(my_str_variable)
 ```
 
-> Output: '5'
+> '5'
 
 This will print `'5'` to the console, indicating that the variable `my_str_variable` is a string. Although for us, humans -- hopefully--, it's the same, for Python it's a different type. Python and other programming languages are very strict about types, so we need to be careful when converting between them.
 
@@ -187,4 +187,4 @@ my_none_variable = None
 print(my_none_variable)
 ```
 
-> Output: None
+> None

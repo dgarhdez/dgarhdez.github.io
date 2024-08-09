@@ -28,7 +28,7 @@ Both `my_string_single` and `my_string_double` are the same string, the only dif
 print(my_string_single == my_string_double)
 ```
 
-> Output: True
+> True
 
 Also, we can define strings with triple quotes `'''` or `"""`. This is useful when we want to define a string that spans multiple lines.
 
@@ -39,7 +39,7 @@ world!'''
 print(my_string_multi)
 ```
 
-> Output: Hello,  
+> Hello,  
 world!
 
 The triple quotes will keep the line breaks in the string.
@@ -59,7 +59,7 @@ my_string = "Daniel" + " " + "Garcia"
 print(my_string)
 ```
 
-> Output: Daniel Garcia
+> Daniel Garcia
 
 We can repeat a string with the `*` operator, as many times as we want:
 
@@ -69,7 +69,7 @@ my_string = "Alright " * 3
 print(my_string)
 ```
 
-> Output: Alright Alright Alright
+> Alright Alright Alright
 
 Keep in mind that we can't concatenate strings with other types of objects, like numbers. We need to convert them to strings first:
 
@@ -79,7 +79,7 @@ my_string = "The number is " + str(5)
 print(my_string)
 ```
 
-> Output: The number is 5
+> The number is 5
 
 Or, we can use the `f-string` method to format strings.
 
@@ -99,7 +99,7 @@ my_string = f"My name is: {name}"
 print(my_string)
 ```
 
-> Output: My name is: Daniel
+> My name is: Daniel
 
 You can see that the placeholder `name` was replaced by its value in the string.
 
@@ -111,7 +111,7 @@ my_string = f"5 + 3 = {5 + 3}"
 print(my_string)
 ```
 
-> Output: 5 + 3 = 8
+> 5 + 3 = 8
 
 An we can even format the output of the expression:
 
@@ -123,7 +123,7 @@ my_string = f"5 / 3 = {number:.2f}"
 print(my_string)
 ```
 
-> Output: 5 / 3 = 1.67
+> 5 / 3 = 1.67
 
 The `:.2f` part of the expression tells Python to format the number with two decimal places.
 
@@ -170,7 +170,7 @@ my_string = "Hello, world!"
 print(len(my_string))
 ```
 
-> Output: 13
+> 13
 
 This means that the string `my_string` has 13 characters, including spaces and punctuation.
 
@@ -203,25 +203,25 @@ And now we can use the methods:
 print(my_string.upper())
 ```
 
-> Output: STRING STUFF HERE
+> STRING STUFF HERE
 
 ```python
 print(my_string.lower())
 ```
 
-> Output: string stuff here
+> string stuff here
 
 ```python
 print(my_string.capitalize())
 ```
 
-> Output: String stuff here
+> String stuff here
 
 ```python
 print(my_string.title())
 ```
 
-> Output: String Stuff Here
+> String Stuff Here
 
 ```python
 # notice the leading and trailing whitespaces
@@ -230,19 +230,19 @@ my_string = "   String Stuff Here   "
 print(my_string.strip())
 ```
 
-> Output: String Stuff Here
+> String Stuff Here
 
 ```python
 print(my_string.replace("Stuff", "Things"))
 ```
 
-> Output: String Things Here
+> String Things Here
 
 ```python
 print(my_string.split())
 ```
 
-> Output: ['String', 'Stuff', 'Here']
+> ['String', 'Stuff', 'Here']
 
 ```python
 my_list_of_strings = ['String', 'Stuff', 'Here']
@@ -251,7 +251,7 @@ print(" ".join(my_list_of_strings))
 print("-".join(my_list_of_strings))
 ```
 
-> Output: String Stuff Here  
-> Output: String-Stuff-Here
+> String Stuff Here  
+> String-Stuff-Here
 
 :arrow_left: [Operations](../03_operations/03_operations.md) - [Conditionals](../05_data_structures/05_data_structures.md) :arrow_right:

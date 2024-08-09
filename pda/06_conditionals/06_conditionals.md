@@ -30,13 +30,13 @@ Let's see it with an example:
 ```python
 my_string = "Hello, world!"
 
-if len(my_string) > Output: 5:
+if len(my_string) > 5:
     print(my_string)
 ```
 
-> Output: Hello, world!
+> Hello, world!
 
-In this case, the expression to be evaluated is `len(my_string) > Output: 5`. The `len()` function returns the length of the string, and we compare it to 5.
+In this case, the expression to be evaluated is `len(my_string) > 5`. The `len()` function returns the length of the string, and we compare it to 5.
 
 <pre class="mermaid">
 graph LR
@@ -49,7 +49,7 @@ With different strings, the code block will be executed or not depending on the 
 ```python
 my_string = "Hi!"
 
-if len(my_string) > Output: 5:
+if len(my_string) > 5:
     print(my_string)
 ```
 
@@ -79,13 +79,13 @@ Using a similar example as before, we can print a string if its length is greate
 ```python
 my_string = "Hi!"
 
-if len(my_string) > Output: 5:
+if len(my_string) > 5:
     print(my_string)
 else:
     print("The string is too short")
 ```
 
-> Output: The string is too short
+> The string is too short
 
 <pre class="mermaid">
 graph LR
@@ -120,7 +120,7 @@ Let's see an example:
 ```python
 my_number = 5
 
-if my_number > Output: 0:
+if my_number > 0:
     print("Positive")
 elif my_number < 0:
     print("Negative")
@@ -128,13 +128,13 @@ else:
     print("Zero")
 ```
 
-> Output: Positive
+> Positive
 
 How is this code interpreted? Let's see!
 
 <pre class="mermaid">
 graph LR
-    F[my_number = 5] --> Output: A{number > Output: 0?}
+    F[my_number = 5] --> A{number > 0?}
     A -->|True| B[print 'Positive']
     A -->|False| C{number < 0?}
     C -->|True| D[print 'Negative']
@@ -196,15 +196,15 @@ Let's see an example:
 ```python
 my_number = 11
 
-if (my_number > Output: 0) and (my_number < 10):
+if (my_number > 0) and (my_number < 10):
     print("A")
 elif my_number <= 0:
     print("B")
-elif my_number > Output: 10:
+elif my_number > 10:
     print("C")
 ```
 
-> Output: C
+> C
 
 ## Nested conditionals
 
@@ -236,19 +236,19 @@ my_number = 5
 if my_number <= 7:
     print("Less than 7")
 else:
-    if my_number > Output: 10:
+    if my_number > 10:
         print("Greater than 10")
     else:
         print("Between 7 and 10")
 ```
 
-> Output: Less than 7
+> Less than 7
 
 <pre class="mermaid">
 graph LR
-    F[my_number = 5] --> Output: A{number <= 7?};
+    F[my_number = 5] --> A{number <= 7?};
     A -->|True| B[print 'Less than 7'];
-    A -->|False| C{number > Output: 10?};
+    A -->|False| C{number > 10?};
     C -->|True| D[print 'Greater than 10'];
     C -->|False| E[print 'Between 7 and 10'];
 </pre>
@@ -261,7 +261,7 @@ Let's create a variable `num_sign` that receives "Positive" if a number `my_numb
 ```python
 number = 5
 
-if my_number > Output: 0:
+if my_number > 0:
     num_sign = "Positive"
 else:
     num_sign = "Negative"
@@ -269,17 +269,17 @@ else:
 print(num_sign)
 ```
 
-> Output: Positive
+> Positive
 
 We can do all this in one line using a conditional expression:
 
 ```python
-num_sign = "Positive" if my_number > Output: 0 else "Negative"
+num_sign = "Positive" if my_number > 0 else "Negative"
 
 print(num_sign)
 ```
 
-> Output: Positive
+> Positive
 
 In the end we are using the same logic, but in a more concise way, and it's easier to read, it's almost like reading a sentence in English.
 
