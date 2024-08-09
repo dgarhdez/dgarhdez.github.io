@@ -1,6 +1,6 @@
 # Python for Data Analytics: Data Structures
 
-:arrow_left: [String Operations](../04_string_operations/04_string_operations.md) - [Conditionals](../06_conditionals/06_conditionals.md) :arrow_right:
+:arrow_left: [String Operations](../block_01/04_string_operations/04_string_operations.md) - [Conditionals](../block_01/06_conditionals/06_conditionals.md) :arrow_right:
 
 Let's recap the main concepts we've learned so far:
 
@@ -650,4 +650,4 @@ print(my_dict.get("country"))
 
 If the key doesn't exist, we get `None`, which is a special value in Python that represents the absence of a value, like a null value.
 
-:arrow_left: [String Operations](../04_string_operations/04_string_operations.md) - [Conditionals](../06_conditionals/06_conditionals.md) :arrow_right:
+:arrow_left: [String Operations](../block_01/04_string_operations/04_string_operations.md) - [Conditionals](../block_01/06_conditionals/06_conditionals.md) :arrow_right:

@@ -2,25 +2,27 @@
 
 ## Block 1: Python, Pandas, and Plotly basics
 
-1. [Basics](/01_basics/01_basics.md)
-2. [Variables and types](/02_variables_and_types/02_variables_and_types.md)
-3. [Operations](/03_operations/03_operations.md)
-4. [String operations](/04_string_operations/04_string_operations.md)
-5. [Data Structures](/05_data_structures/05_data_structures.md)
-6. [Conditionals](/06_conditionals/06_conditionals.md)
-7. [Loops](/07_loops/07_loops.md)
-8. [Comprehensions](/08_comprehensions/08_comprehensions.md)
-9. [Functions](/09_functions/09_functions.md)
-10. Error catching
-11. I/O with Context Manager
-12. Intro to Numpy
-13. Intro to Pandas
-14. Data manipulation with Pandas
-15. Merge, join and concat with Pandas
-16. Handling missing data with Pandas
-17. Intro to Plotly
+1. [Basics](/block_01/01_basics/01_basics.md)
+2. [Variables and types](/block_01/02_variables_and_types/02_variables_and_types.md)
+3. [Operations](/block_01/03_operations/03_operations.md)
+4. [String operations](/block_01/04_string_operations/04_string_operations.md)
+5. [Data Structures](/block_01/05_data_structures/05_data_structures.md)
+6. [Conditionals](/block_01/06_conditionals/06_conditionals.md)
+7. [Loops](/block_01/07_loops/07_loops.md)
+8. [Comprehensions](/block_01/08_comprehensions/08_comprehensions.md)
+9. [Functions](/block_01/09_functions/09_functions.md)
+10. [Error catching](/block_01/10_error_catching/10_error_catching.md)
 
-## Block 2: Advanced Pandas, sklearn, and pipelines
+## Block 2: Numpy, Pandas, and Plotly
+
+1. Intro to Numpy
+2. Intro to Pandas
+3. Data manipulation with Pandas
+4. Merge, join and concat with Pandas
+5. Handling missing data with Pandas
+6. Intro to Plotly
+
+## Block 4: Advanced Pandas, sklearn, and pipelines
 
 1. Date and time operations with Pandas
 2. Vectorized string operations and Regex with Pandas

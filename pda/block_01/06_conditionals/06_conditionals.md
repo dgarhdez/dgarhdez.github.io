@@ -1,7 +1,7 @@
 
 # Python for Data Analytics: Conditionals
 
-:arrow_left: [Data Structures](../05_data_structures/05_data_structures.md) - [Loops](../07_loops/07_loops.md) :arrow_right:
+:arrow_left: [Data Structures](../block_01/05_data_structures/05_data_structures.md) - [Loops](../block_01/07_loops/07_loops.md) :arrow_right:
 
 So far we've seen that the code we write is interpreted from top to bottom, but there are times when we want a certain piece of code to be interpreted only when some condition is met. This is where conditionals come in.
 
@@ -283,4 +283,4 @@ print(num_sign)
 
 In the end we are using the same logic, but in a more concise way, and it's easier to read, it's almost like reading a sentence in English.
 
-:arrow_left: [Data Structures](../05_data_structures/05_data_structures.md) - [Loops](../07_loops/07_loops.md) :arrow_right:
+:arrow_left: [Data Structures](../block_01/05_data_structures/05_data_structures.md) - [Loops](../block_01/07_loops/07_loops.md) :arrow_right:

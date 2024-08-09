@@ -1,6 +1,6 @@
 # Python for Data Analytics: Functions
 
-:arrow_left: [Comprehensions](../08_comprehensions/08_comprehensions.md) - [Error catching](../10_error_catching/10_error_catching.md) :arrow_right:
+:arrow_left: [Comprehensions](../block_01/08_comprehensions/08_comprehensions.md) - [Error catching](../block_01/10_error_catching/10_error_catching.md) :arrow_right:
 
 We finished the warm-up with comprehensions. We know to store data, to operate on it, and to alter the flow of code with conditionals and loops.
 
@@ -440,4 +440,4 @@ print(sum_of_numbers)
 | User-defined function | When we are going to use the function more than once | `def square(x): return x ** 2` |
 | Lambda function | When we are going to use the function only once | `lambda x: x ** 2` |
 
-:arrow_left: [Comprehensions](../08_comprehensions/08_comprehensions.md) - [Error catching](../10_error_catching/10_error_catching.md) :arrow_right:
+:arrow_left: [Comprehensions](../block_01/08_comprehensions/08_comprehensions.md) - [Error catching](../block_01/10_error_catching/10_error_catching.md) :arrow_right:

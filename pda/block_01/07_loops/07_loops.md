@@ -1,8 +1,8 @@
 # Python for Data Analytics: Loops
 
-:arrow_left: [Conditionals](../06_conditionals/06_conditionals.md) - [Comprehensions](../08_comprehensions/08_comprehensions.md) :arrow_right:
+:arrow_left: [Conditionals](../block_01/06_conditionals/06_conditionals.md) - [Comprehensions](../block_01/08_comprehensions/08_comprehensions.md) :arrow_right:
 
-So far we've seen that we can control the flow of code by using [conditional expressions](../06_conditionals/06_conditionals.md) like `if`, `elif`, and `else`.
+So far we've seen that we can control the flow of code by using [conditional expressions](../block_01/06_conditionals/06_conditionals.md) like `if`, `elif`, and `else`.
 
 Another way to control the flow of code is by using loops. Loops allow us to execute a block of code multiple times, without having to write the same code over and over again.
 
@@ -19,7 +19,7 @@ Before diving into loops, let's see some ways to create iterable objects in Pyth
 
 An iterable is an object that can be used in a loop. In Python, there are several types of objects that are iterable.
 
-Some of the iterables are the [data structures](../05_data_structures/05_data_structures.md) that we already know: lists, tuples, strings, sets, dictionaries.
+Some of the iterables are the [data structures](../block_01/05_data_structures/05_data_structures.md) that we already know: lists, tuples, strings, sets, dictionaries.
 
 But there are others that are new to us:
 
@@ -395,4 +395,4 @@ Let's see some examples:
     b 2  
     c 3
 
-:arrow_left: [Conditionals](../06_conditionals/06_conditionals.md) - [Comprehensions](../08_comprehensions/08_comprehensions.md) :arrow_right:
+:arrow_left: [Conditionals](../block_01/06_conditionals/06_conditionals.md) - [Comprehensions](../block_01/08_comprehensions/08_comprehensions.md) :arrow_right:

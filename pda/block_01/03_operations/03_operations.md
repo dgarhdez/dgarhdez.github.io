@@ -1,6 +1,6 @@
 # Python for Data Analytics: Operations
 
-:arrow_left: [Variables and Types](../02_variables_and_types/02_variables_and_types.md) - [String Operations](../04_string_operations/04_string_operations.md) :arrow_right:
+:arrow_left: [Variables and Types](../block_01/02_variables_and_types/02_variables_and_types.md) - [String Operations](../block_01/04_string_operations/04_string_operations.md) :arrow_right:
 
 Now that we know the basic types of data and how to store them properly in memory using variables, we can start to perform operations between them.
 
@@ -193,7 +193,7 @@ This shorthand works for all arithmetic operations:
 
 ## Logical operations
 
-Logical operations will help up control the flow of our code as we will see in [5. Conditionals](../06_conditionals/06_conditionals.md).
+Logical operations will help up control the flow of our code as we will see in [5. Conditionals](../block_01/06_conditionals/06_conditionals.md).
 
 Logical operators require boolean values, and they return boolean values.
 
@@ -258,7 +258,7 @@ False
 
 ## Comparison operations
 
-Comparison operations will also help us compare values and control the flow of our code as we will see in [5. Conditionals](../06_conditionals/06_conditionals.md).
+Comparison operations will also help us compare values and control the flow of our code as we will see in [5. Conditionals](../block_01/06_conditionals/06_conditionals.md).
 
 Comparisons also will always return a boolean value.
 
@@ -299,4 +299,4 @@ Finally, we solve the logical operation `False and True`:
 False
 ```
 
-:arrow_left: [Variables and Types](../02_variables_and_types/02_variables_and_types.md) - [String Operations](../04_string_operations/04_string_operations.md) :arrow_right:
+:arrow_left: [Variables and Types](../block_01/02_variables_and_types/02_variables_and_types.md) - [String Operations](../block_01/04_string_operations/04_string_operations.md) :arrow_right:

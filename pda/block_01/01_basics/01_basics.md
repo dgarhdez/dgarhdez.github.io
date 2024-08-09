@@ -1,6 +1,6 @@
 # Python for Data Analytics: Basics
 
-:arrow_right: [Variables and Types](../02_variables_and_types/02_variables_and_types.md)
+:arrow_right: [Variables and Types](../block_01/02_variables_and_types/02_variables_and_types.md)
 
 Python is programming language with which we can do many things. It's a very versatile that will allow us to tackle many problems in different disciplines. In this course we will focus on the data analytics part of Python, which is a very popular use case for this language.
 
@@ -28,4 +28,4 @@ Although we can run python code with a simple text file and the command line, we
 
 You will have access to Jupyter Notebooks within Anaconda, but I strongly recomment to use Jupyter Lab, which is a more modern version of Jupyter Notebooks. More info on how to use Jupyter Lab can be found [here](https://jupyterlab.readthedocs.io/en/latest/user/interface.html).
 
-:arrow_right: [Variables and Types](../02_variables_and_types/02_variables_and_types.md)
+:arrow_right: [Variables and Types](../block_01/02_variables_and_types/02_variables_and_types.md)

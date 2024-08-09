@@ -1,6 +1,6 @@
 # Python for Data Analytics: Comprehensions
 
-:arrow_left: [Loops](../07_loops/07_loops.md) - [Functions](../09_functions/09_functions.md) :arrow_right:
+:arrow_left: [Loops](../block_01/07_loops/07_loops.md) - [Functions](../block_01/09_functions/09_functions.md) :arrow_right:
 
 After learning about data structures, conditionals, and loops, we are now ready to solve these type of problems:
 
@@ -277,7 +277,7 @@ Where:
 Let's see it with an example:
 
 * Given the first ten letters in the alphabet, create a dictionary where the keys are the characters of the alphabet, and the values are the positions of each letter in the alphabet
-* Hint: [Looping through special iterables and objects](../07_loops/07_loops.md/#looping-through-special-iterables-and-objects)
+* Hint: [Looping through special iterables and objects](../block_01/07_loops/07_loops.md/#looping-through-special-iterables-and-objects)
 
     ```python
     abc = 'abcdefghijklmnopqrstuvwxyz'
@@ -331,4 +331,4 @@ An example:
 
     > `{' ', 'f', 'r', 's', 't'}`
 
-:arrow_left: [Loops](../07_loops/07_loops.md) - [Functions](../09_functions/09_functions.md) :arrow_right:
+:arrow_left: [Loops](../block_01/07_loops/07_loops.md) - [Functions](../block_01/09_functions/09_functions.md) :arrow_right:

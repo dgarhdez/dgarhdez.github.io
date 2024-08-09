@@ -1,6 +1,6 @@
 # Python for Data Analytics: String Operations
 
-:arrow_left: [Operations](../03_operations/03_operations.md) - [Conditionals](../05_data_structures/05_data_structures.md) :arrow_right:
+:arrow_left: [Operations](../block_01/03_operations/03_operations.md) - [Conditionals](../block_01/05_data_structures/05_data_structures.md) :arrow_right:
 
 We have seen some operations we can do in Python for numeric (`int`, `float`) and boolean (`bool`) values.
 
@@ -254,4 +254,4 @@ print("-".join(my_list_of_strings))
 > String Stuff Here  
 > String-Stuff-Here
 
-:arrow_left: [Operations](../03_operations/03_operations.md) - [Conditionals](../05_data_structures/05_data_structures.md) :arrow_right:
+:arrow_left: [Operations](../block_01/03_operations/03_operations.md) - [Conditionals](../block_01/05_data_structures/05_data_structures.md) :arrow_right:
