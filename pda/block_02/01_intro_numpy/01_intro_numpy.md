@@ -1,3 +1,7 @@
+---
+katex: True
+---
+
 # Python for Data Analytics: Intro to Numpy
 
 [Intro to Pandas](../block_02/02_intro_pandas/02_intro_pandas.md) :arrow_right:

@@ -5,6 +5,10 @@ url: "https://dgarhdez.github.io"
 repository: dgarhdez/dgarhdez.github.io # for github-metadata plugin
 permalink: pretty
 
+markdown: kramdown
+kramdown:
+  math_engine: katex
+
 mermaid:
   # Version of mermaid library
   # Pick an available version from https://cdn.jsdelivr.net/npm/mermaid/
