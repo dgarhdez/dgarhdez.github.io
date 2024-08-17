@@ -15,8 +15,13 @@ kramdown:
   math_engine: mathjax
   syntax_highlighter: rouge
 
-# Include MathJax
 mathjax: true
+
+katex:
+  enable: true
+  css: https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.11/katex.min.css
+  js: https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.11/katex.min.js
+  auto-render: https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.11/contrib/auto-render.min.js
 
 mermaid:
   # Version of mermaid library
