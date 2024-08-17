@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>01_intro_numpy.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h1 id="python-for-data-analytics-intro-to-numpy">Python for Data Analytics: Intro to Numpy</h1>
+<p><a href="../block_02/02_intro_pandas/02_intro_pandas.md">Intro to Pandas</a> <img class="emoji" alt="arrow_right" src="data:image/png;base64,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" /></p>
+<p>Numpy is a Python library that allows us to work with arrays, matrices, and tensors. It is the foundation of many other libraries, like Pandas and Scikit-learn.</p>
+<p>We will use Numpy, either by itself or with Pandas, to perform operations with data. These operations can also be done using Python lists, but Numpy is much faster and more efficient.</p>
+<p>In this section we will import Numpy now, and we will assume it's already imported in the rest of the examples.</p>
+<pre class="hljs"><code><div><span class="hljs-keyword">import</span> numpy <span class="hljs-keyword">as</span> np
+</div></code></pre>
+<pre class="hljs"><code><div>SE = \frac{\sigma}{\sqrt{n}}
+</div></code></pre>
+<h2 id="creating-arrays">Creating arrays</h2>
+<p>In Numpy we create arrays using the <code>np.array()</code> function. This function can receive a list, a tuple, or any other iterable object as an argument.</p>
+<pre class="hljs"><code><div>numbers = np.array([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>])
+
+print(numbers)
+</div></code></pre>
+<blockquote>
+<p><code>[1 2 3 4 5]</code></p>
+</blockquote>
+<p>It might look like a list, but it's not. We can check the type of the object using the <code>type()</code> function:</p>
+<pre class="hljs"><code><div>print(type(numbers))
+</div></code></pre>
+<blockquote>
+<p><code>&lt;class 'numpy.ndarray'&gt;</code></p>
+</blockquote>
+<p>We can also create arrays with other types and more dimensions:</p>
+<pre class="hljs"><code><div>matrix = np.array([[<span class="hljs-string">"a"</span>, <span class="hljs-string">"b"</span>, <span class="hljs-string">"c"</span>], [<span class="hljs-string">"d"</span>, <span class="hljs-string">"e"</span>, <span class="hljs-string">"f"</span>]])
+
+print(matrix)
+</div></code></pre>
+<blockquote>
+<p><code>[['a' 'b' 'c']</code><br>
+<code>['d' 'e' 'f']]</code></p>
+</blockquote>
+<p>We can also create ranges of numbers using the <code>np.arange()</code> function:</p>
+<pre class="hljs"><code><div>range_numbers = np.arange(<span class="hljs-number">0</span>, <span class="hljs-number">10</span>)
+
+print(range_numbers)
+</div></code></pre>
+<blockquote>
+<p><code>[0 1 2 3 4 5 6 7 8 9]</code></p>
+</blockquote>
+<p>Resulting in an array with numbers from 0 to 9.</p>
+<h2 id="lists-vs-arrays">Lists vs Arrays</h2>
+<p>Python lists, <a href="../block_01/05_data_structures/05_data_structures.md/#lists">as we already know</a> are very flexible and can contain different types of data. But this flexibility comes with a cost: lists are not optimized for numerical operations, and they are not the best option when we need to perform operations with lots of data.</p>
+<p>This is because how Python lists are stored in memory.</p>
+<p>Each element in a list is a reference to a memory address where the actual data is stored. This means that lists are not contiguous in memory, and this can slow down operations that require accessing multiple elements.</p>
+<p>Numpy arrays, on the other hand, are stored in contiguous memory blocks, which makes them faster and more efficient when performing numerical operations.</p>
+<p>But, Numpy arrays have some limitations:</p>
+<ul>
+<li>All elements in a Numpy array must be of the same type.</li>
+<li>Numpy arrays have a fixed size, which means that we cannot change the size of an array once it is created.</li>
+</ul>
+<p>In the end, we are sacrificing flexibility for speed and efficiency.</p>
+<h2 id="safe-casting">Safe casting</h2>
+<p>As mentioned before, Numpy arrays can only contain elements of the same type. If we try to create an array with different types, Numpy will cast all elements to the most general type.</p>
+<pre class="hljs"><code><div>mixed = np.array([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-string">"a"</span>, <span class="hljs-string">"b"</span>])
+
+print(mixed)
+</div></code></pre>
+<blockquote>
+<p><code>['1' '2' 'a' 'b']</code></p>
+</blockquote>
+<p>If we check the type of the array, we will see that it contains strings:</p>
+<pre class="hljs"><code><div>print(mixed.dtype)
+</div></code></pre>
+<blockquote>
+<p><code>'&lt;U21'</code></p>
+</blockquote>
+<p>This means that the array contains Unicode strings.</p>
+<p>We can always convert an integer to a string, but we cannot convert a string to an integer. This is why Numpy casted all elements to strings.</p>
+<p>Numpy tries its best to cast all elements to the most general type, but sometimes it can't. In those cases, Numpy will raise an error.</p>
+<h2 id="arrays">Arrays</h2>
+<p>We will use the term <code>array</code> to refer to Numpy arrays.</p>
+<p>These objects can have one or more dimensions, and they can be created in different ways. The term <code>array</code> is mostly used in Computer Science, while the term <code>tensor</code> is used in Mathematics, Physics, and Engineering, but they are essentially the same thing.</p>
+<p>Depending on the number of dimensions in the array, we can have:</p>
+<ul>
+<li>Scalars: 0-dimensional arrays
+$$ a = 1 $$</li>
+<li>Vectors: 1-dimensional arrays
+$$ v = [1, 2, 3] $$</li>
+<li>Matrices: 2-dimensional arrays
+$$ M = \begin{bmatrix} 1 &amp; 2 &amp; 3 \ 4 &amp; 5 &amp; 6 \end{bmatrix} $$</li>
+<li>Tensors: n-dimensional arrays
+$$ T = \begin{bmatrix} \begin{bmatrix} 1 &amp; 2 &amp; 3 \ 4 &amp; 5 &amp; 6 \end{bmatrix} &amp; \begin{bmatrix} 7 &amp; 8 &amp; 9 \ 10 &amp; 11 &amp; 12 \end{bmatrix} \end{bmatrix} $$</li>
+</ul>
+<p>All of those categories can be considered tensors, but we will use the term <code>tensor</code> to refer to arrays with more than 2 dimensions.</p>
+<h3 id="attributes">Attributes</h3>
+<p>Numpy arrays have several attributes that we can use to get information about the array:</p>
+<ul>
+<li><code>ndim</code>: the number of dimensions in the array</li>
+<li><code>shape</code>: the shape of the array</li>
+<li><code>size</code>: the number of elements in the array</li>
+<li><code>dtype</code>: the type of the elements in the array</li>
+</ul>
+<pre class="hljs"><code><div>matrix = np.array([[<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>], [<span class="hljs-number">4</span>, <span class="hljs-number">5</span>, <span class="hljs-number">6</span>]])
+
+print(<span class="hljs-string">f"Dimensions: <span class="hljs-subst">{matrix.ndim}</span>"</span>)
+print(<span class="hljs-string">f"Shape: <span class="hljs-subst">{matrix.shape}</span>"</span>)
+print(<span class="hljs-string">f"Size: <span class="hljs-subst">{matrix.size}</span>"</span>)
+print(<span class="hljs-string">f"Type: <span class="hljs-subst">{matrix.dtype}</span>"</span>)
+</div></code></pre>
+<blockquote>
+<p><code>Dimensions: 2</code><br>
+<code>Shape: (2, 3)</code><br>
+<code>Size: 6</code><br>
+<code>Type: int64</code></p>
+</blockquote>
+<h3 id="vectors">Vectors</h3>
+<p>Vectors are 1-dimensional arrays. We can create them using lists or tuples:</p>
+<pre class="hljs"><code><div>vector = np.array([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>])
+
+print(<span class="hljs-string">f"Vector: <span class="hljs-subst">{vector}</span>"</span>)
+print(<span class="hljs-string">f"Dimensions: <span class="hljs-subst">{vector.ndim}</span>"</span>)
+print(<span class="hljs-string">f"Shape: <span class="hljs-subst">{vector.shape}</span>"</span>)
+print(<span class="hljs-string">f"Size: <span class="hljs-subst">{vector.size}</span>"</span>)
+print(<span class="hljs-string">f"Type: <span class="hljs-subst">{vector.dtype}</span>"</span>)
+</div></code></pre>
+<blockquote>
+<p><code>Vector: [1 2 3]</code><br>
+<code>Dimensions: 1</code><br>
+<code>Shape: (3,)</code><br>
+<code>Size: 3</code><br>
+<code>Type: int64</code></p>
+</blockquote>
+<p>The shape of a vector is <code>(n,)</code>, where <code>n</code> is the number of elements in the vector.</p>
+<p>It has a comma because it's a tuple with one element, and that's how Python represents tuples with one element -- otherwise it would be confused with a simple value in parentheses.</p>
+<h3 id="matrices">Matrices</h3>
+<p>Matrices are 2-dimensional arrays. We can create them using lists of lists:</p>
+<pre class="hljs"><code><div>matrix = np.array([[<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>], [<span class="hljs-number">4</span>, <span class="hljs-number">5</span>, <span class="hljs-number">6</span>]])
+
+print(<span class="hljs-string">f"Matrix: <span class="hljs-subst">{matrix}</span>"</span>)
+print(<span class="hljs-string">f"Dimensions: <span class="hljs-subst">{matrix.ndim}</span>"</span>)
+print(<span class="hljs-string">f"Shape: <span class="hljs-subst">{matrix.shape}</span>"</span>)
+print(<span class="hljs-string">f"Size: <span class="hljs-subst">{matrix.size}</span>"</span>)
+print(<span class="hljs-string">f"Type: <span class="hljs-subst">{matrix.dtype}</span>"</span>)
+</div></code></pre>
+<blockquote>
+<p><code>Matrix: [[1 2 3]</code><br>
+<code>[4 5 6]]</code><br>
+<code>Dimensions: 2</code><br>
+<code>Shape: (2, 3)</code><br>
+<code>Size: 6</code><br>
+<code>Type: int64</code></p>
+</blockquote>
+<p>The shape of a matrix is <code>(n, m)</code>, where <code>n</code> is the number of rows and <code>m</code> is the number of columns.</p>
+<p>Matrices will be the most common object when dealing with data, as they represent tables with rows and columns.</p>
+<h3 id="tensors">Tensors</h3>
+<p>In general, every array is a tensor, but we will use the term <code>tensor</code> to refer to arrays with more than 2 dimensions.</p>
+<p>We can create tensors using lists of lists of lists:</p>
+<pre class="hljs"><code><div>tensor = np.array([[[<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>], [<span class="hljs-number">4</span>, <span class="hljs-number">5</span>, <span class="hljs-number">6</span>]], [[<span class="hljs-number">7</span>, <span class="hljs-number">8</span>, <span class="hljs-number">9</span>], [<span class="hljs-number">10</span>, <span class="hljs-number">11</span>, <span class="hljs-number">12</span>]]])
+
+print(<span class="hljs-string">f"Tensor: <span class="hljs-subst">{tensor}</span>"</span>)
+print(<span class="hljs-string">f"Dimensions: <span class="hljs-subst">{tensor.ndim}</span>"</span>)
+print(<span class="hljs-string">f"Shape: <span class="hljs-subst">{tensor.shape}</span>"</span>)
+print(<span class="hljs-string">f"Size: <span class="hljs-subst">{tensor.size}</span>"</span>)
+print(<span class="hljs-string">f"Type: <span class="hljs-subst">{tensor.dtype}</span>"</span>)
+</div></code></pre>
+<blockquote>
+<p><code>Tensor: [[[ 1  2  3]</code><br>
+<code>[ 4  5  6]]</code><br>
+<code>[[ 7  8  9]</code><br>
+<code>[10 11 12]]]</code><br>
+<code>Dimensions: 3</code><br>
+<code>Shape: (2, 2, 3)</code><br>
+<code>Size: 12</code><br>
+<code>Type: int64</code></p>
+</blockquote>
+<p>The shape of a tensor is <code>(n, m, o)</code>, where <code>n</code> is the number of matrices, <code>m</code> is the number of rows, and <code>o</code> is the number of columns.</p>
+<p>As the number of dimensions increases, talkinng about rows or columns doesn't make much sense, so we will stick to 2-D matrices when talking about rows and columns.</p>
+<h2 id="element-wise-operations">Element-wise operations</h2>
+<h3 id="arithmetic-operations">Arithmetic operations</h3>
+<p>When using arrays, in many cases the operations are element-wise and the arithmetic operators work as expected:</p>
+<pre class="hljs"><code><div>a = np.array([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>])
+b = np.array([<span class="hljs-number">4</span>, <span class="hljs-number">5</span>, <span class="hljs-number">6</span>])
+
+print(<span class="hljs-string">f"Addition: <span class="hljs-subst">{a + b}</span>"</span>)
+print(<span class="hljs-string">f"Subtraction: <span class="hljs-subst">{a - b}</span>"</span>)
+print(<span class="hljs-string">f"Multiplication: <span class="hljs-subst">{a * b}</span>"</span>)
+print(<span class="hljs-string">f"Division: <span class="hljs-subst">{a / b}</span>"</span>)
+print(<span class="hljs-string">f"Exponentiation: <span class="hljs-subst">{a ** b}</span>"</span>)
+print(<span class="hljs-string">f"Modulus: <span class="hljs-subst">{b % a}</span>"</span>)
+print(<span class="hljs-string">f"Floor division: <span class="hljs-subst">{b // a}</span>"</span>)
+</div></code></pre>
+<blockquote>
+<p><code>Addition: [5 7 9]</code><br>
+<code>Subtraction: [-3 -3 -3]</code><br>
+<code>Multiplication: [ 4 10 18]</code><br>
+<code>Division: [0.25 0.4  0.5 ]</code><br>
+<code>Exponentiation: [  1  32 729]</code><br>
+<code>Modulus: [0 1 0]</code><br>
+<code>Floor division: [4 2 2]</code></p>
+</blockquote>
+<h3 id="comparison-operations">Comparison operations</h3>
+<p>We can also use comparison operators:</p>
+<pre class="hljs"><code><div>a = np.array([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>])
+b = np.array([<span class="hljs-number">4</span>, <span class="hljs-number">2</span>, <span class="hljs-number">1</span>])
+
+print(<span class="hljs-string">f"Greater than: <span class="hljs-subst">{a &gt; b}</span>"</span>)
+</div></code></pre>
+<blockquote>
+<p><code>Greater than: [False False True]</code></p>
+</blockquote>
+<p>The comparison operators will return an array of booleans.</p>
+<p>The result of a comparison operation can be used to filter elements in an array. This is called boolean indexing or boolean masking.</p>
+<pre class="hljs"><code><div>a = np.array([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>])
+b = np.array([<span class="hljs-number">4</span>, <span class="hljs-number">2</span>, <span class="hljs-number">1</span>])
+
+mask = a &gt; b
+
+masked_a = a[mask] <span class="hljs-comment"># apply the mask</span>
+
+print(masked_a)
+</div></code></pre>
+<blockquote>
+<p><code>[3]</code></p>
+</blockquote>
+<p>What is happening here is that the <code>mask</code> array contains <code>True</code> in the position where the condition is <code>True</code>, and <code>False</code> otherwise.</p>
+<p>When we use the <code>mask</code> array to index the <code>a</code> array, we get only the elements where the condition is <code>True</code>, which is the element <code>3</code> in our example.</p>
+<h3 id="logical-operations">Logical operations</h3>
+<p>We can also use logical operators:</p>
+<pre class="hljs"><code><div>a = np.array([<span class="hljs-literal">True</span>, <span class="hljs-literal">True</span>, <span class="hljs-literal">False</span>])
+b = np.array([<span class="hljs-literal">True</span>, <span class="hljs-literal">False</span>, <span class="hljs-literal">False</span>])
+
+print(<span class="hljs-string">f"Logical AND: <span class="hljs-subst">{a &amp; b}</span>"</span>)
+print(<span class="hljs-string">f"Logical OR: <span class="hljs-subst">{a | b}</span>"</span>)
+print(<span class="hljs-string">f"Logical NOT: <span class="hljs-subst">{~a}</span>"</span>)
+</div></code></pre>
+<blockquote>
+<p><code>Logical AND: [ True False False]</code><br>
+<code>Logical OR: [ True  True False]</code><br>
+<code>Logical NOT: [False False  True]</code></p>
+</blockquote>
+<p>As you can see, the symbols for logical operators are different from the ones we use in Python (<code>and</code>, <code>or</code>, <code>not</code>).</p>
+<table>
+<thead>
+<tr>
+<th>Python</th>
+<th>Numpy</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>and</code></td>
+<td><code>&amp;</code></td>
+</tr>
+<tr>
+<td><code>or</code></td>
+<td><code>\|</code></td>
+</tr>
+<tr>
+<td><code>not</code></td>
+<td><code>~</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="broadcasting">Broadcasting</h2>
+<p>Broadcasting is a powerful feature in Numpy that allows us to perform operations between arrays with different shapes.</p>
+<p>When we perform an operation between two arrays with different shapes, Numpy will try to &quot;broadcast&quot; the smaller array to match the shape of the larger array.</p>
+<p>For example, we can add a scalar to a vector:</p>
+<pre class="hljs"><code><div>a = np.array([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>])
+b = <span class="hljs-number">2</span>
+
+print(a + b)
+</div></code></pre>
+<blockquote>
+<p><code>[3 4 5]</code></p>
+</blockquote>
+<p>What Numpy does here is to broadcast the scalar <code>b</code> to match the shape of the vector <code>a</code>, and then perform the operation.</p>
+<p>$$ a = \begin{bmatrix} 1 &amp; 2 &amp; 3 \end{bmatrix} $$
+$$ b = 2 \xrightarrow{\text{broadcast}} b_b = \begin{bmatrix} 2 &amp; 2 &amp; 2 \end{bmatrix} $$
+$$ a + b = \begin{bmatrix} 1 &amp; 2 &amp; 3 \end{bmatrix} + \begin{bmatrix} 2 &amp; 2 &amp; 2 \end{bmatrix} = \begin{bmatrix} 3 &amp; 4 &amp; 5 \end{bmatrix} $$</p>
+<p>We can also add a vector to a matrix:</p>
+<pre class="hljs"><code><div>A = np.array([[<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>], [<span class="hljs-number">4</span>, <span class="hljs-number">5</span>, <span class="hljs-number">6</span>]])
+B = np.array([<span class="hljs-number">10</span>, <span class="hljs-number">20</span>, <span class="hljs-number">30</span>])
+
+print(A + B)
+</div></code></pre>
+<blockquote>
+<p><code>[[11 22 33]</code><br>
+<code>[14 25 36]]</code></p>
+</blockquote>
+<p>In this case, Numpy broadcasts the vector <code>b</code> to match the shape of the matrix <code>A</code>:</p>
+<p>$$ A = \begin{bmatrix} 1 &amp; 2 &amp; 3 \ 4 &amp; 5 &amp; 6 \end{bmatrix} $$
+$$ b = \begin{bmatrix} 1 &amp; 2 &amp; 3 \end{bmatrix} \xrightarrow{\text{broadcast}} B_b = \begin{bmatrix} 10 &amp; 20 &amp; 30 \ 10 &amp; 20 &amp; 30 \end{bmatrix} $$
+$$ A + B_b = \begin{bmatrix} 1 &amp; 2 &amp; 3 \ 4 &amp; 5 &amp; 6 \end{bmatrix} + \begin{bmatrix} 10 &amp; 20 &amp; 30 \ 10 &amp; 20 &amp; 30 \end{bmatrix} = \begin{bmatrix} 11 &amp; 22 &amp; 33 \ 14 &amp; 25 &amp; 36 \end{bmatrix} $$</p>
+<p>Broadcasting is very convenient for our operations, but we need to be very careful when using it, as it can lead to unexpected results is the broadcasting happens when we don't want it to.</p>
+
+</body>
+</html>
