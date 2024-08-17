@@ -15,7 +15,7 @@
 
 ## Block 2: Numpy, Pandas, and Plotly
 
-1. Intro to Numpy
+1. [Intro to Numpy](/block_02/01_intro_numpy/01_intro_numpy.md)
 2. Intro to Pandas
 3. Data manipulation with Pandas
 4. Merge, join and concat with Pandas
