@@ -1,6 +1,4 @@
----
-katex: True
----
+{%- include mathjax.html -%}
 
 # Python for Data Analytics: Intro to Numpy
 
