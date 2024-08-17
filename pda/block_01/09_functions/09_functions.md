@@ -64,7 +64,7 @@ The only mandatory elements in a function definition are the `def` keyword and t
 
 Functions can receive arguments, which are the values that we pass to the function when we call it.
 
-These arguements will be used in the code block of the function to perform some operation. If the parameter is not used, it will be ignored.
+These arguments will be used in the code block of the function to perform some operation. If the parameter is not used, it will be ignored.
 
 We can create functions with any number of arguments, including none.
 

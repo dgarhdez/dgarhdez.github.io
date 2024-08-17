@@ -2,8 +2,6 @@
 
 Hi there :wave:
 
-![Profile Picture](/images/me.jpg)
-
 I'm Daniel García Hernández, and I work with Data.
 
 I've been working with data for the last 8 years, mostly in the energy sector and lately in the e-commerce sector.
@@ -22,9 +20,9 @@ You can find me in the following places:
 
 :musical_keyboard: [Spotify](https://open.spotify.com/user/dgarhdez?si=254c37467a164c42)
 
-## Courses
+## Courses and tutorials
 
-As I am teaching Python for Data Analytics, I've created some material for the classes. I wanted to have it available online, so here it is.
+I've put together some material for my classes, please take a look into it
 
 :snake: [Python for Data Analytics](/pda/pda_index.md) :snake:
 

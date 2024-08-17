@@ -4,24 +4,6 @@ description: Daniel García Hernández's personal site
 url: "https://dgarhdez.github.io"
 repository: dgarhdez/dgarhdez.github.io # for github-metadata plugin
 permalink: pretty
-nav_enabled: true
-heading_anchors: true
-last_edit_timestamp: true
-last_edit_time_format: "%b %e %Y at %I:%M %p"
-enable_copy_code_button: true
-markdown: kramdown
-kramdown:
-  input: GFM
-  math_engine: mathjax
-  syntax_highlighter: rouge
-
-mathjax: true
-
-katex:
-  enable: true
-  css: https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.11/katex.min.css
-  js: https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.11/katex.min.js
-  auto-render: https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.11/contrib/auto-render.min.js
 
 mermaid:
   # Version of mermaid library
