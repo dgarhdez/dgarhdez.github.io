@@ -340,10 +340,10 @@ A classic example is the sum of all the elements in a list using `reduce`:
 <pre class="mermaid">
 flowchart LR
     O["[1, 2, 3, 4, 5]"] --> O1["1"]
-    O["[1, 2, 3, 4, 5]"] --> O2["2"]
-    O["[1, 2, 3, 4, 5]"] --> O3["3"]
-    O["[1, 2, 3, 4, 5]"] --> O4["4"]
-    O["[1, 2, 3, 4, 5]"] --> O5["5"]
+    O --> O2["2"]
+    O --> O3["3"]
+    O --> O4["4"]
+    O --> O5["5"]
 
     O5 --> S4["sum"]
     R3 --> S4

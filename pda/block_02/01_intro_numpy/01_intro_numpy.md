@@ -111,9 +111,9 @@ Depending on the number of dimensions in the array, we can have:
 * Vectors: 1-dimensional arrays
     $$ v = [1, 2, 3] $$
 * Matrices: 2-dimensional arrays
-    $$ M = \begin{array} 1 & 2 & 3 \\ 4 & 5 & 6 \end{array} $$
+    $$ M = \begin{bmatrix} 1 & 2 & 3 \\ 4 & 5 & 6 \end{bmatrix} $$
 * Tensors: n-dimensional arrays
-    $$ T = \begin{array} \begin{array} 1 & 2 & 3 \\ 4 & 5 & 6 \end{array} & \begin{array} 7 & 8 & 9 \\ 10 & 11 & 12 \end{array} \end{array} $$
+    $$ T = \begin{bmatrix} \begin{bmatrix} 1 & 2 & 3 \\ 4 & 5 & 6 \end{bmatrix} & \begin{bmatrix} 7 & 8 & 9 \\ 10 & 11 & 12 \end{bmatrix} \end{bmatrix} $$
 
 All of those categories can be considered tensors, but we will use the term `tensor` to refer to arrays with more than 2 dimensions.
 
@@ -323,9 +323,9 @@ print(a + b)
 
 What Numpy does here is to broadcast the scalar `b` to match the shape of the vector `a`, and then perform the operation.
 
-$$ a = \begin{array} 1 & 2 & 3 \end{array} $$
-$$ b = 2 \xrightarrow{\text{broadcast}} b_b = \begin{array} 2 & 2 & 2 \end{array} $$
-$$ a + b = \begin{array} 1 & 2 & 3 \end{array} + \begin{array} 2 & 2 & 2 \end{array} = \begin{array} 3 & 4 & 5 \end{array} $$
+$$ a = \begin{bmatrix} 1 & 2 & 3 \end{bmatrix} $$
+$$ b = 2 \xrightarrow{\text{broadcast}} b_b = \begin{bmatrix} 2 & 2 & 2 \end{bmatrix} $$
+$$ a + b = \begin{bmatrix} 1 & 2 & 3 \end{bmatrix} + \begin{bmatrix} 2 & 2 & 2 \end{bmatrix} = \begin{bmatrix} 3 & 4 & 5 \end{bmatrix} $$
 
 We can also add a vector to a matrix:
 
@@ -341,8 +341,8 @@ print(A + B)
 
 In this case, Numpy broadcasts the vector `b` to match the shape of the matrix `A`:
 
-$$ A = \begin{array} 1 & 2 & 3 \\ 4 & 5 & 6 \end{array} $$
-$$ b = \begin{array} 1 & 2 & 3 \end{array} \xrightarrow{\text{broadcast}} B_b = \begin{array} 10 & 20 & 30 \\ 10 & 20 & 30 \end{array} $$
-$$ A + B_b = \begin{array} 1 & 2 & 3 \\ 4 & 5 & 6 \end{array} + \begin{array} 10 & 20 & 30 \\ 10 & 20 & 30 \end{array} = \begin{array} 11 & 22 & 33 \\ 14 & 25 & 36 \end{array} $$
+$$ A = \begin{bmatrix} 1 & 2 & 3 \\ 4 & 5 & 6 \end{bmatrix} $$
+$$ b = \begin{bmatrix} 1 & 2 & 3 \end{bmatrix} \xrightarrow{\text{broadcast}} B_b = \begin{bmatrix} 10 & 20 & 30 \\ 10 & 20 & 30 \end{bmatrix} $$
+$$ A + B_b = \begin{bmatrix} 1 & 2 & 3 \\ 4 & 5 & 6 \end{bmatrix} + \begin{bmatrix} 10 & 20 & 30 \\ 10 & 20 & 30 \end{bmatrix} = \begin{bmatrix} 11 & 22 & 33 \\ 14 & 25 & 36 \end{bmatrix} $$
 
 Broadcasting is very convenient for our operations, but we need to be very careful when using it, as it can lead to unexpected results is the broadcasting happens when we don't want it to.
