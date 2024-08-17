@@ -1,5 +1,3 @@
-{%- include mathjax.html -%}
-
 # Python for Data Analytics: Intro to Numpy
 
 [Intro to Pandas](../block_02/02_intro_pandas/02_intro_pandas.md) :arrow_right:
@@ -109,12 +107,19 @@ These objects can have one or more dimensions, and they can be created in differ
 Depending on the number of dimensions in the array, we can have:
 
 * Scalars: 0-dimensional arrays
-  $$ a = 1 $$
+
+$$ a = 1 $$
+
 * Vectors: 1-dimensional arrays
+
     $$ v = [1, 2, 3] $$
+
 * Matrices: 2-dimensional arrays
+
     $$ M = \begin{bmatrix} 1 & 2 & 3 \\ 4 & 5 & 6 \end{bmatrix} $$
+
 * Tensors: n-dimensional arrays
+
     $$ T = \begin{bmatrix} \begin{bmatrix} 1 & 2 & 3 \\ 4 & 5 & 6 \end{bmatrix} & \begin{bmatrix} 7 & 8 & 9 \\ 10 & 11 & 12 \end{bmatrix} \end{bmatrix} $$
 
 All of those categories can be considered tensors, but we will use the term `tensor` to refer to arrays with more than 2 dimensions.
