@@ -16,10 +16,6 @@ In this section we will import Numpy now, and we will assume it's already import
 import numpy as np
 ```
 
-```math
-SE = \frac{\sigma}{\sqrt{n}}
-```
-
 ## Creating arrays
 
 In Numpy we create arrays using the `np.array()` function. This function can receive a list, a tuple, or any other iterable object as an argument.
