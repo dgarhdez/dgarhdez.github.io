@@ -110,7 +110,7 @@ Depending on the number of dimensions in the array, we can have:
 
 * Scalars: 0-dimensional arrays
 
-$$ a = 1 $$
+    $$ a = 1 $$
 
 * Vectors: 1-dimensional arrays
 
@@ -333,7 +333,9 @@ print(a + b)
 What Numpy does here is to broadcast the scalar `b` to match the shape of the vector `a`, and then perform the operation.
 
 $$ a = \begin{bmatrix} 1 & 2 & 3 \end{bmatrix} $$
+
 $$ b = 2 \xrightarrow{\text{broadcast}} b_b = \begin{bmatrix} 2 & 2 & 2 \end{bmatrix} $$
+
 $$ a + b = \begin{bmatrix} 1 & 2 & 3 \end{bmatrix} + \begin{bmatrix} 2 & 2 & 2 \end{bmatrix} = \begin{bmatrix} 3 & 4 & 5 \end{bmatrix} $$
 
 We can also add a vector to a matrix:
@@ -351,7 +353,9 @@ print(A + B)
 In this case, Numpy broadcasts the vector `b` to match the shape of the matrix `A`:
 
 $$ A = \begin{bmatrix} 1 & 2 & 3 \\ 4 & 5 & 6 \end{bmatrix} $$
+
 $$ b = \begin{bmatrix} 1 & 2 & 3 \end{bmatrix} \xrightarrow{\text{broadcast}} B_b = \begin{bmatrix} 10 & 20 & 30 \\ 10 & 20 & 30 \end{bmatrix} $$
+
 $$ A + B_b = \begin{bmatrix} 1 & 2 & 3 \\ 4 & 5 & 6 \end{bmatrix} + \begin{bmatrix} 10 & 20 & 30 \\ 10 & 20 & 30 \end{bmatrix} = \begin{bmatrix} 11 & 22 & 33 \\ 14 & 25 & 36 \end{bmatrix} $$
 
 Broadcasting is very convenient for our operations, but we need to be very careful when using it, as it can lead to unexpected results is the broadcasting happens when we don't want it to.
