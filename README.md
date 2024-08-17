@@ -28,15 +28,6 @@ As I am teaching Python for Data Analytics, I've created some material for the c
 
 :snake: [Python for Data Analytics](/pda/pda_index.md) :snake:
 
-## Todo
-
-Tutorials:
-
-[ ] Python environments: `conda`, `uv`, `poetry`
-[ ] `requirements.txt` for PDA
-[ ] Timeseries analysis
-[ ] Intro to Timeseries Forecasting.
-
 ## About this site
 
 [Link to repo](https://github.com/dgarhdez/dgarhdez.github.io)
