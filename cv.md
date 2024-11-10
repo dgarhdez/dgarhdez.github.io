@@ -14,7 +14,7 @@
 
 ## Experience
 
-### Manager, Data Scientist, Yaba - Madrid, Spain
+### Manager Analytics, Data Scientist, Yaba - Madrid, Spain
 
 *December 2021 – Present*
 
