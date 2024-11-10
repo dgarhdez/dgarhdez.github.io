@@ -330,21 +330,25 @@ print(a + b)
 
 > `[3 4 5]`
 
-What Numpy does here is to broadcast the scalar `b` to match the shape of the vector `a`, and then perform the operation.
+the operation we want to do here is:
+
+$$ \begin{bmatrix} 1+2 & 2+2 & 3+2 \end{bmatrix} $$
+
+So, what Numpy does is to broadcast the scalar `b` into a vector filled with `2` to match the shape of the vector `a`, and then perform the operation:
 
 $$ a = \begin{bmatrix} 1 & 2 & 3 \end{bmatrix} $$
 
-$$ b = 2 \xrightarrow{\text{broadcast}} b_b = \begin{bmatrix} 2 & 2 & 2 \end{bmatrix} $$
+$$ b = 2 \rightarrow b_b = \begin{bmatrix} 2 & 2 & 2 \end{bmatrix} $$
 
-$$ a + b = \begin{bmatrix} 1 & 2 & 3 \end{bmatrix} + \begin{bmatrix} 2 & 2 & 2 \end{bmatrix} = \begin{bmatrix} 3 & 4 & 5 \end{bmatrix} $$
+$$ a + b_b = \begin{bmatrix} 1 & 2 & 3 \end{bmatrix} + \begin{bmatrix} 2 & 2 & 2 \end{bmatrix} = \begin{bmatrix} 3 & 4 & 5 \end{bmatrix} $$
 
 We can also add a vector to a matrix:
 
 ```python
 A = np.array([[1, 2, 3], [4, 5, 6]])
-B = np.array([10, 20, 30])
+b = np.array([10, 20, 30])
 
-print(A + B)
+print(A + b)
 ```
 
 > `[[11 22 33]`  
@@ -354,8 +358,105 @@ In this case, Numpy broadcasts the vector `b` to match the shape of the matrix `
 
 $$ A = \begin{bmatrix} 1 & 2 & 3 \\ 4 & 5 & 6 \end{bmatrix} $$
 
-$$ b = \begin{bmatrix} 1 & 2 & 3 \end{bmatrix} \xrightarrow{\text{broadcast}} B_b = \begin{bmatrix} 10 & 20 & 30 \\ 10 & 20 & 30 \end{bmatrix} $$
+$$ b = \begin{bmatrix} 10 & 20 & 30 \end{bmatrix} \rightarrow{} B_b = \begin{bmatrix} 10 & 20 & 30 \\ 10 & 20 & 30 \end{bmatrix} $$
 
 $$ A + B_b = \begin{bmatrix} 1 & 2 & 3 \\ 4 & 5 & 6 \end{bmatrix} + \begin{bmatrix} 10 & 20 & 30 \\ 10 & 20 & 30 \end{bmatrix} = \begin{bmatrix} 11 & 22 & 33 \\ 14 & 25 & 36 \end{bmatrix} $$
 
 Broadcasting is very convenient for our operations, but we need to be very careful when using it, as it can lead to unexpected results is the broadcasting happens when we don't want it to.
+
+## Special arrays
+
+Numpy has several functions to create special arrays:
+
+* `np.zeros([n, m])`: creates an array `n x m` filled with zeros
+
+$$ \begin{bmatrix} 0 & ... & 0 \\ ... & 0 & ... \\ 0 & ... & 0 \end{bmatrix} $$
+
+* `np.ones([n, m])`: creates an array `n x m` filled with ones
+
+$$ \begin{bmatrix} 1 & ... & 1 \\ ... & 1 & ... \\ 1 & ... & 1 \end{bmatrix} $$
+
+* `np.full([n, m], v)`: creates an array filled with a specific value
+
+$$ \begin{bmatrix} v & ... & v \\ ... & v & ... \\ v & ... & v \end{bmatrix} $$
+
+* `np.eye(n)`: creates an identity matrix $I_n$
+
+$$ \begin{bmatrix} 1 & 0 & ... & 0 \\ ... & 1 & 0 & 0 \\ & ... & 1 & .. \\ 0 & 0 & 0 & 1 \end{bmatrix} $$
+
+## Array operations
+
+### Dot product
+
+The dot product of two arrays is the sum of the products of the corresponding elements of the arrays. It's equivalent to the `SUMPRODUCT()` function in Excel.
+
+$$ v_1 = \begin{bmatrix} a_1 & a_2 & a_3 \end{bmatrix} $$
+
+$$ v_2 = \begin{bmatrix} b_1 & b_2 & b_3 \end{bmatrix} $$
+
+$$ v_1 \cdot v_2 = \sum_{i=1}^{n} a_i \cdot b_i = a_1 \cdot b_1 + a_2 \cdot b_2 + a_3 \cdot b_3 $$
+
+We can calculate the dot product of two vectors using the `np.dot()` function:
+
+```python
+a = np.array([1, 2, 3])
+b = np.array([4, 5, 6])
+
+print(np.dot(a, b))
+```
+
+> `32`
+
+### Vector product
+
+The vector product of two arrays is another array that is perpendicular to the two original arrays.
+
+$$ v_1 = \begin{bmatrix} a_1 & a_2 & a_3 \end{bmatrix} $$
+
+$$ v_2 = \begin{bmatrix} b_1 & b_2 & b_3 \end{bmatrix} $$
+
+$$ v_1 \times v_2 = \det \begin{bmatrix} i & j & k \\ a_1 & a_2 & a_3 \\ b_1 & b_2 & b_3 \end{bmatrix} = \begin{bmatrix} a_2 \cdot b_3 - a_3 \cdot b_2 \\ a_3 \cdot b_1 - a_1 \cdot b_3 \\ a_1 \cdot b_2 - a_2 \cdot b_1 \end{bmatrix} $$
+
+We can calculate the vector product of two vectors using the `np.cross()` function:
+
+```python
+a = np.array([1, 2, 3])
+b = np.array([4, 5, 6])
+
+print(np.cross(a, b))
+```
+
+> `[-3  6 -3]`
+
+### Matrix product
+
+The matrix product of two matrices is the sum of the products of the corresponding elements of the matrices.
+
+$$ A = \begin{bmatrix} a_{11} & a_{12} \\ a_{21} & a_{22} \end{bmatrix} $$
+
+$$ B = \begin{bmatrix} b_{11} & b_{12} \\ b_{21} & b_{22} \end{bmatrix} $$
+
+$$ A \cdot B = \begin{bmatrix} a_{11} \cdot b_{11} + a_{12} \cdot b_{21} & a_{11} \cdot b_{12} + a_{12} \cdot b_{22} \\ a_{21} \cdot b_{11} + a_{22} \cdot b_{21} & a_{21} \cdot b_{12} + a_{22} \cdot b_{22} \end{bmatrix} $$
+
+We can calculate the matrix product of two matrices using the `np.dot()` function:
+
+```python
+A = np.array([[1, 2], [3, 4]])
+B = np.array([[5, 6], [7, 8]])
+
+print(np.dot(A, B))
+```
+
+> `[[19 22]`  
+`[43 50]]`  
+
+There is also the `@` operator that can be used to calculate the matrix product:
+
+```python
+print(A @ B)
+```
+
+> `[[19 22]`  
+`[43 50]]`  
+
+Matrix multiplication is a very important operation in linear algebra, and it's used in many machine learning algorithms.
