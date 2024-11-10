@@ -10,6 +10,8 @@ I'm mostly experienced in Data Analytics, Machine Learning, and Analytics Engine
 
 I also teach Python for Data Analytics at [IE School of Science and Technology](https://www.ie.edu/school-science-technology/faculty/daniel-garcia-hernandez/).
 
+[Full CV](cv.md)
+
 You can find me in the following places:
 
 :envelope: [Email](mailto:dgarhdez@gmail.com)
