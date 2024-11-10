@@ -8,6 +8,8 @@
 
 :computer: [GitHub](https://github.com/dgarhdez)
 
+:teacher: [IE School of Science and Technology](https://www.ie.edu/school-science-technology/faculty/daniel-garcia-hernandez/)
+
 :iphone: +34 609 323 901
 
 ---
