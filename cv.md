@@ -87,5 +87,6 @@
 
 ## Languages
 
-* **English:** Full professional proficiency
-* **Spanish:** Native proficiency
+:uk:  **English:** Full professional proficiency
+
+:es:  **Spanish:** Native proficiency
