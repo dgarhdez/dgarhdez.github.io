@@ -1,21 +1,25 @@
 # Daniel Garcia Hernandez
 
-* **Madrid, Spain**
-* <dgarhdez@gmail.com>
-* +34 609 323 901
-* [LinkedIn](linkedin.com/in/dgarhdez)
-* [GitHub](github.com/dgarhdez)
+:house: **Madrid, Spain**
+
+:envelope: <dgarhdez@gmail.com>
+
+:phone: +34 609 323 901
+
+:necktie: [LinkedIn](linkedin.com/in/dgarhdez)
+
+:computer: [GitHub](github.com/dgarhdez)
 
 ---
 
 ## Experience
 
-### Manager, Data Scientist, Yaba -- Madrid, Spain
+### Manager, Data Scientist, Yaba - Madrid, Spain
 
 *December 2021 – Present*
 
 * Built analytics tools like demand forecaster, advertising sensitivity of sales, and dashboards for reporting
-* Managed a team developing analytics tools, using Python, dbt, BigQuery, Looker, and Hex to provide insights.
+* Managed a team developing analytics tools, using Python, dbt, BigQuery, Looker, and Hex to provide insights and analytics tools.
 * Collaborated closely with operations and finance teams to refine and improve data-driven insights
 
 ### Manager Data & AI, Westinghouse Electric Company - Madrid, Spain
