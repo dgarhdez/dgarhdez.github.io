@@ -6,9 +6,9 @@
 
 :phone: +34 609 323 901
 
-:necktie: [LinkedIn](linkedin.com/in/dgarhdez)
+:necktie: LinkedIn
 
-:computer: [GitHub](github.com/dgarhdez)
+:computer: GitHub
 
 ---
 
@@ -18,40 +18,40 @@
 
 *December 2021 – Present*
 
-* Built analytics tools like demand forecaster, advertising sensitivity of sales, and dashboards for reporting
-* Managed a team developing analytics tools, using Python, dbt, BigQuery, Looker, and Hex to provide insights and analytics tools.
-* Collaborated closely with operations and finance teams to refine and improve data-driven insights
+* Spearheaded the development of cutting-edge analytics tools, including demand forecasters and sales sensitivity dashboards.
+* Led a dynamic team to create powerful analytics solutions using Python, dbt, BigQuery, Looker, and Hex.
+* Partnered with operations and finance teams to enhance data-driven decision-making processes.
 
 ### Manager Data & AI, Westinghouse Electric Company - Madrid, Spain
 
 *June 2021 - December 2021*
 
-* Managed data science projects, ensuring successful project delivery and alignment with business objectives
-* Developed the data strategy for the Data & AI team, enhancing data utilization and driving innovative solutions.
-* Recruited and built a high-performing team of 16 full-time employees, advancing the company's analytics capabilities.
+* Directed data science projects, ensuring alignment with business goals and successful delivery.
+* Formulated and executed the data strategy for the Data & AI team, driving innovative data utilization.
+* Built and led a high-performing team of 16, significantly boosting the company's analytics capabilities.
 
 ### Adjunct Professor, IE School of Science and Technology - Madrid, Spain
 
 *January 2020 - Present*
 
-* Conducted courses in Python for Data Analytics I & II and Machine Learning 2
-* Recognized as the Best Professor in Masters in Big Data 2023 and 2024, reflecting excellence in teaching and student engagement.
+* Delivered engaging courses in Python for Data Analytics I & II and Machine Learning 2.
+* Honored as the Best Professor in Masters in Big Data for 2023 and 2024, showcasing excellence in teaching and student engagement.
 
 ### Team Lead Advanced Analytics, Data Scientist, Axpo - Madrid, Spain
 
 *November 2017 – June 2021*
 
-* Created and deployed energy trading models using Machine Learning, making a profit of ca. 1M€/year.
-* Established and led the Advanced Analytics team in Spain, managing a team of 4 full-time employees to deliver high-value analytics solutions
-* Developed ad-hoc reports and analyses to support the trading team, facilitating data-driven trading decisions
+* Engineered and deployed profitable energy trading models using Machine Learning, generating approximately 1M€/year.
+* Founded and led the Advanced Analytics team in Spain, managing a team of 4 to deliver high-impact analytics solutions.
+* Produced ad-hoc reports and analyses to support the trading team, enabling data-driven trading decisions.
 
 ### Energy Trader, Acciona Energía - Madrid, Spain
 
 *Dec 2014 – Nov 2017*
 
-* Executed daily and intraday strategies in the Spanish Power Market, ensuring optimal portfolio performance
-* Developed VBA-based analytics tools for market analysis, enhancing decision-making processes.
-* Maintained and created comprehensive reports and dashboards in Excel, providing clear and actionable insights.
+* Executed strategic daily and intraday trades in the Spanish Power Market, optimizing portfolio performance.
+* Developed advanced VBA-based analytics tools for market analysis, enhancing decision-making processes.
+* Created and maintained comprehensive reports and dashboards in Excel, providing actionable insights.
 
 ## Education
 
@@ -63,7 +63,7 @@
 
 *2020*
 
-### K-School, Deep Learning expert course
+### K-School, Deep Learning Expert Course
 
 *2019*
 
@@ -87,5 +87,5 @@
 
 ## Languages
 
-* **English:** Full professional competence
-* **Spanish:** Native
+* **English:** Full professional proficiency
+* **Spanish:** Native proficiency
