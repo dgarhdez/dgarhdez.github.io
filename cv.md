@@ -4,11 +4,11 @@
 
 :envelope: <dgarhdez@gmail.com>
 
-:phone: +34 609 323 901
+:necktie: [LinkedIn](https://www.linkedin.com/in/dgarhdez/)
 
-:necktie: LinkedIn
+:computer: [GitHub](https://github.com/dgarhdez)
 
-:computer: GitHub
+:iphone: +34 609 323 901
 
 ---
 
@@ -55,25 +55,11 @@
 
 ## Education
 
-### Maven, Modern Forecasting in Practice
-
-*2024*
-
-### IMD Business School, Leadership Essentials
-
-*2020*
-
-### K-School, Deep Learning Expert Course
-
-*2019*
-
-### K-School, MSc Data Science (all but thesis)
-
-*2017*
-
-### Universidad Politécnica de Madrid, BSc+MSc Mining and Energy Engineering
-
-*2014*
+* Maven, Modern Forecasting in Practice. *2024*
+* IMD Business School, Leadership Essentials. **2020
+* K-School, Deep Learning Expert Course *2019*
+* **K-School, MSc Data Science** (all but thesis). *2017*
+* **Universidad Politécnica de Madrid**, BSc+MSc Mining and Energy Engineering. *2014*
 
 ## Technologies
 
