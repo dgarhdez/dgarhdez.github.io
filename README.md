@@ -4,9 +4,11 @@ Hi there :wave:
 
 I'm Daniel García Hernández, and I work with Data.
 
-I've been working with data for the last 8 years, mostly in the energy sector and lately in the SaaS/EdTech sector.
+I've been working with data for the last 10 years, mostly in the energy sector, e-commerce, and lately in the SaaS/EdTech sector.
 
 I'm mostly experienced in Data Analytics, Machine Learning, and Analytics Engineering. I'm the most comfortable with Python and SQL/dbt.
+
+Currently I'm the Head of Data Solutions and Engineering at [GoStudent](https://www.gostudent.org/en-gb/), a leading EdTech company in Europe.
 
 I also teach Python for Data Analytics at [IE School of Science and Technology](https://www.ie.edu/school-science-technology/faculty/daniel-garcia-hernandez/).
 
