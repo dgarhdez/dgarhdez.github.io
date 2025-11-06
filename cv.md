@@ -16,9 +16,18 @@
 
 ## Experience
 
+### Head of Data Solutions and Engineering - Madrid, Spain
+
+*January 2024 – Present*
+
+* Lead and manage a team of 7 data professionals, between Data Engineers, Analytics Engineers, and Data Scientists.
+* Migrated from Airflow + dbt core to dbt Cloud, improving reliability and maintainability of ETL/ELT pipelines.
+* Substituted Sales Commissions external tool with in-house solution, reducing costs by 80k/year and increasing flexibility.
+* Lead the integration of data from 2 companies after a merger, ensuring data consistency and accessibility across the organization.
+
 ### Manager Analytics, Data Scientist, Yaba - Madrid, Spain
 
-*December 2021 – Present*
+*December 2021 – January 2024*
 
 * Spearheaded the development of cutting-edge analytics tools, including demand forecasters and sales sensitivity dashboards.
 * Led a dynamic team to create powerful analytics solutions using Python, dbt, BigQuery, Looker, and Hex.
